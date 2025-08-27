@@ -1,2 +1,0 @@
-# PreyectoWeb-TiendaDeJuegos
-PreyectoWeb-TiendaDeJuegos

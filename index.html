@@ -1,11 +1,516 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>--</title>
+    <title>PressNew</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
-    
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <section class="container-fluid">
+
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="img/Logo.png" alt="Logo" height="40" class="me-2">
+                    <span class="fw-bold">PressNew</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPressNew"
+                    aria-controls="navbarPressNew" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <section class="collapse navbar-collapse" id="navbarPressNew">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+
+                    <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Buscar juegos, consolas, accesorios..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit"><img src="img/buscar.png" alt="Buscar"
+                                height="20"></button>
+                    </form>
+
+                    <a href="#" class="ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center text-white">
+                        <i class="bi bi-person-circle fs-4"></i>
+                    </a>
+                </section>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrusel Principal -->
+        <section id="carouselPressNew" class="carousel slide" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPressNew" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselPressNew" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselPressNew" data-bs-slide-to="2"></button>
+            </section>
+
+            <section class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img src="img/Banner.jpg" class="d-block w-100 img-fluid" alt="Videojuegos destacados">
+                    <figcaption class="carousel-caption">
+                    </figcaption>
+                </figure>
+
+                <figure class="carousel-item">
+                    <img src="img/Banner2.jpg" class="d-block w-100 img-fluid" alt="Ofertas exclusivas">
+                    <figcaption class="carousel-caption">
+                        <h2 class="display-6 fw-bold">Ofertas Semanales</h2>
+                        <p class="h4">Consolas, accesorios y más al mejor precio</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="carousel-item">
+                    <img src="img/Banner3.jpg" class="d-block w-100 img-fluid" alt="Nuevos lanzamientos">
+                    <figcaption class="carousel-caption">
+                        <h2 class="display-6 fw-bold">Nuevos Lanzamientos</h2>
+                        <p class="h4">Descubre los juegos más esperados</p>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPressNew" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPressNew" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </section>
+
+        <!-- Principales Consolas en el Mundo Gamer -->
+        <section class="py-5 bg-light">
+            <section class="container">
+                <header class="text-center mb-5">
+                    <h2 class="display-5 fw-bold">Principales Consolas en el Mundo Gamer</h2>
+                    <p class="h6 text-muted">Explora las consolas más influyentes que han marcado la historia de los
+                        videojuegos.</p>
+                </header>
+
+                <section class="row g-4">
+                    <article class="col-md-3">
+                        <section class="card h-100">
+                            <figure class="card-body text-center">
+                                <img src="img/PS5.webp" class="img-fluid mb-3" alt="PlayStation 5">
+                                <h5 class="card-title">PlayStation 5</h5>
+                                <p class="card-text">La consola de Sony con gráficos 4K y SSD ultrarrápido.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ps5Modal">Ver
+                                    más</button>
+                            </figure>
+                        </section>
+                    </article>
+
+                    <article class="col-md-3">
+                        <section class="card h-100">
+                            <figure class="card-body text-center">
+                                <img src="img/XBOX X.png" class="img-fluid mb-3" alt="Xbox Series X">
+                                <h5 class="card-title">Xbox Series X</h5>
+                                <p class="card-text">La consola más potente de Microsoft, con Game Pass incluido.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xboxModal">Ver
+                                    más</button>
+                            </figure>
+                        </section>
+                    </article>
+
+                    <article class="col-md-3">
+                        <section class="card h-100">
+                            <figure class="card-body text-center">
+                                <img src="img/Switch.webp" class="img-fluid mb-3" alt="Nintendo Switch">
+                                <h5 class="card-title">Nintendo Switch</h5>
+                                <p class="card-text">Consola híbrida de Nintendo, juega en casa o en portátil.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#switchModal">Ver
+                                    más</button>
+                            </figure>
+                        </section>
+                    </article>
+
+                    <article class="col-md-3">
+                        <section class="card h-100">
+                            <figure class="card-body text-center">
+                                <img src="img/STEAM-DECK.png" class="img-fluid mb-3" alt="Steam Deck">
+                                <h5 class="card-title">Steam Deck</h5>
+                                <p class="card-text">La portátil de Valve con acceso a toda tu librería de Steam.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#steamModal">Ver
+                                    más</button>
+                            </figure>
+                        </section>
+                    </article>
+
+                </section>
+            </section>
+        </section>
+
+        <!-- Videojuegos Destacados -->
+        <section class="py-5 bg-dark">
+            <article class="container">
+                <header class="text-center mb-4 text-light">
+                    <h2 class="display-5 fw-bold">Videojuegos Destacados</h2>
+                    <p class="h6 text-muted">Explora algunos de los títulos más populares del mundo gamer</p>
+                </header>
+
+                <section class="row g-4">
+
+                    <article class="col-md-4">
+                        <section class="card h-100">
+                            <img src="img/GOW-Ragnarok.jpg" class="card-img-top" alt="God of War">
+                            <section class="card-body text-center">
+                                <h5 class="card-title">God of War: Ragnarok</h5>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gowModal">
+                                    Ver más
+                                </button>
+                            </section>
+                        </section>
+                    </article>
+
+                    <article class="col-md-4">
+                        <section class="card h-100">
+                            <img src="img/Zelda.webp" class="card-img-top" alt="Zelda">
+                            <section class="card-body text-center">
+                                <h5 class="card-title">Zelda: Tears of the Kingdom</h5>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#zeldaModal">
+                                    Ver más
+                                </button>
+                            </section>
+                        </section>
+                    </article>
+
+                    <article class="col-md-4">
+                        <section class="card h-100">
+                            <img src="img/ElderRing.jpg" class="card-img-top" alt="Elden Ring">
+                            <section class="card-body text-center">
+                                <h5 class="card-title">Elden Ring</h5>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eldenModal">
+                                    Ver más
+                                </button>
+                            </section>
+                        </section>
+                    </article>
+
+                    <article class="col-md-4">
+                        <section class="card h-100">
+                            <img src="img/FC25.webp" class="card-img-top" alt="FIFA 23">
+                            <section class="card-body text-center">
+                                <h5 class="card-title">EA Sports FC 25</h5>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fifaModal">
+                                    Ver más
+                                </button>
+                            </section>
+                        </section>
+                    </article>
+
+                    <article class="col-md-4">
+                        <section class="card h-100">
+                            <img src="img/Minecraft.jpg" class="card-img-top" alt="Minecraft">
+                            <section class="card-body text-center">
+                                <h5 class="card-title">Minecraft</h5>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minecraftModal">
+                                    Ver más
+                                </button>
+                            </section>
+                        </section>
+                    </article>
+
+                    <article class="col-md-4">
+                        <section class="card h-100">
+                            <img src="img/Ciberpunk.webp" class="card-img-top" alt="Cyberpunk 2077">
+                            <section class="card-body text-center">
+                                <h5 class="card-title">Cyberpunk 2077</h5>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cyberModal">
+                                    Ver más
+                                </button>
+                            </section>
+                        </section>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <section class="bg-light text-dark py-5 text-center">
+            <h3 class="fw-bold mb-3">¡Forma parte de la comunidad PressNew!</h3>
+            <p class="mb-4">Crea tu cuenta para acceder a ofertas exclusivas, guardar tus favoritos y disfrutar del
+                mundo gamer al máximo.</p>
+
+            <section class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-primary btn-lg">Registrarme</a>
+                <a href="#" class="btn btn-outline-success btn-lg">Iniciar Sesión</a>
+            </section>
+        </section>
+
+
+        <!-- Footer-->
+        <footer class="bg-dark text-white pt-4">
+            <section class="container text-center text-md-start">
+                <section class="row">
+                    <article class="col-md-3 mb-4">
+                        <img src="img/Logo.png" alt="Logo" width="50%" class="mb-2">
+                        <p class="small">Tu tienda gamer de confianza. Consolas, videojuegos y accesorios al mejor
+                            precio.</p>
+                    </article>
+
+                    <nav class="col-md-3 mb-4">
+                        <h6 class="fw-bold">Navegación</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Productos</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Nosotros</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <section class="col-md-3 mb-4">
+                        <h6 class="fw-bold">Soporte</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Ayuda</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="col-md-3 mb-4">
+                        <h6 class="fw-bold">Síguenos</h6>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </section>
+
+                </section>
+            </section>
+
+            <section class="bg-secondary text-center py-2">
+                <small>&copy; 2025 PressNew. Todos los derechos reservados.</small>
+            </section>
+        </footer>
+
+
+        <!-- Modals Consolas-->
+        <section class="modal fade" id="ps5Modal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">PlayStation 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/PS5.webp" alt="PlayStation 5" class="img-fluid rounded mb-3" width="45%">
+                        <p>
+                            La PlayStation 5 ofrece un SSD ultrarrápido, gráficos en 4K y el innovador mando DualSense
+                            con retroalimentación háptica y gatillos adaptativos para una experiencia inmersiva.
+                        </p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="xboxModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">Xbox Series X</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/XBOX X.png" alt="Xbox Series X" class="img-fluid rounded mb-3" width="45%">
+                        <p>
+                            La Xbox Series X es la consola más potente de Microsoft, con soporte para 4K nativo,
+                            120 FPS y retrocompatibilidad con miles de títulos de generaciones anteriores.
+                        </p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="switchModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">Nintendo Switch</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/Switch.webp" alt="Nintendo Switch" class="img-fluid rounded mb-3" width="45%">
+                        <p>
+                            La Nintendo Switch combina juego en casa y portátil. Con títulos exclusivos como
+                            <em>Zelda: Breath of the Wild</em> y <em>Mario Kart 8 Deluxe</em>, es la consola más
+                            versátil para todo tipo de jugadores.
+                        </p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="steamModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">Steam Deck</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/STEAM-DECK.png" alt="Steam Deck" class="img-fluid rounded mb-3" width="45%">
+                        <p>
+                            La Steam Deck es la consola portátil de Valve que permite acceder a toda tu biblioteca de
+                            Steam
+                            con un diseño ergonómico, potencia de PC y soporte para mods y periféricos.
+                        </p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <!-- Modals Consolas-->
+        <section class="modal fade" id="gowModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">God of War: Ragnarok</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/GOW-Ragnarok.jpg" alt="God of War Ragnarok" class="img-fluid rounded mb-3" width="75%">
+                        <p>Kratos y Atreus se enfrentan al apocalipsis nórdico en una historia épica llena de acción,
+                            mitología y batallas impresionantes.</p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="zeldaModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">Zelda: Tears of the Kingdom</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/Zelda.webp" alt="Zelda Tears of the Kingdom" class="img-fluid rounded mb-3" width="75%">
+                        <p>Explora Hyrule como nunca antes en esta nueva entrega de la saga. Vive aventuras épicas,
+                            resuelve acertijos y descubre secretos ocultos.</p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="eldenModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">Elden Ring</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/ElderRing.jpg" alt="Elden Ring" class="img-fluid rounded mb-3" width="75%">
+                        <p>El mundo abierto de fantasía oscura creado por FromSoftware y George R. R. Martin te espera.
+                            Desafíos brutales y exploración sin límites.</p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="fifaModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">EA Sports FC 25</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/FC25.webp" alt="FC 25" class="img-fluid rounded mb-3" width="75%">
+                        <p>La experiencia de fútbol más realista con nuevas mecánicas de juego, ligas completas y la
+                            Copa Mundial incluida.</p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="minecraftModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">Minecraft</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/Minecraft.jpg" alt="Minecraft" class="img-fluid rounded mb-3" width="75%">
+                        <p>Construye, explora y sobrevive en un mundo infinito de bloques. El clásico que sigue siendo
+                            un fenómeno mundial.</p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="modal fade" id="cyberModal" tabindex="-1" aria-hidden="true">
+            <section class="modal-dialog modal-lg">
+                <article class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title fw-bold">Cyberpunk 2077</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </header>
+                    <section class="modal-body text-center">
+                        <img src="img/Ciberpunk.webp" alt="Cyberpunk 2077" class="img-fluid rounded mb-3 " width="75%">
+                        <p>Sumérgete en Night City, una metrópolis futurista llena de acción, decisiones narrativas y
+                            una atmósfera única de ciencia ficción.</p>
+                    </section>
+                    <footer class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="#" class="btn btn-primary">Obtener ahora</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
