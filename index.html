@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="bg-dark text-white">
+    <header class="bg-dark text-white fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <section class="container-fluid">
 
@@ -26,10 +26,10 @@
 
                 <section class="collapse navbar-collapse" id="navbarPressNew">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
 
                     <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
@@ -47,7 +47,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="mt-5">
         <!-- Carrusel Principal -->
         <section id="carouselPressNew" class="carousel slide" data-bs-ride="carousel">
             <section class="carousel-indicators">
@@ -103,11 +103,11 @@
                 <section class="row g-4">
                     <article class="col-md-3">
                         <section class="card h-100">
-                            <figure class="card-body text-center">
+                            <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/PS5.webp" class="img-fluid mb-3" alt="PlayStation 5">
-                                <h5 class="card-title">PlayStation 5</h5>
+                                <h5 class="card-title mb-3">PlayStation 5</h5>
                                 <p class="card-text">La consola de Sony con gráficos 4K y SSD ultrarrápido.</p>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ps5Modal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#ps5Modal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -115,11 +115,11 @@
 
                     <article class="col-md-3">
                         <section class="card h-100">
-                            <figure class="card-body text-center">
+                            <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/XBOX X.png" class="img-fluid mb-3" alt="Xbox Series X">
-                                <h5 class="card-title">Xbox Series X</h5>
+                                <h5 class="card-title mb-3">Xbox Series X</h5>
                                 <p class="card-text">La consola más potente de Microsoft, con Game Pass incluido.</p>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xboxModal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#xboxModal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -127,11 +127,11 @@
 
                     <article class="col-md-3">
                         <section class="card h-100">
-                            <figure class="card-body text-center">
+                            <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/Switch.webp" class="img-fluid mb-3" alt="Nintendo Switch">
-                                <h5 class="card-title">Nintendo Switch</h5>
+                                <h5 class="card-title mb-3">Nintendo Switch</h5>
                                 <p class="card-text">Consola híbrida de Nintendo, juega en casa o en portátil.</p>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#switchModal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#switchModal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -139,11 +139,11 @@
 
                     <article class="col-md-3">
                         <section class="card h-100">
-                            <figure class="card-body text-center">
+                            <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/STEAM-DECK.png" class="img-fluid mb-3" alt="Steam Deck">
-                                <h5 class="card-title">Steam Deck</h5>
+                                <h5 class="card-title mb-3">Steam Deck</h5>
                                 <p class="card-text">La portátil de Valve con acceso a toda tu librería de Steam.</p>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#steamModal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#steamModal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -254,23 +254,23 @@
         <footer class="bg-dark text-white pt-4">
             <section class="container text-center text-md-start">
                 <section class="row">
-                    <article class="col-md-3 mb-4">
+                    <article class="col-md-3 mb-4 text-center">
                         <img src="img/Logo.png" alt="Logo" width="50%" class="mb-2">
                         <p class="small">Tu tienda gamer de confianza. Consolas, videojuegos y accesorios al mejor
                             precio.</p>
                     </article>
 
-                    <nav class="col-md-3 mb-4">
+                    <nav class="col-md-3 mb-4 text-center">
                         <h6 class="fw-bold">Navegación</h6>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                            <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Productos</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Nosotros</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+                            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                            <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
                         </ul>
                     </nav>
 
-                    <section class="col-md-3 mb-4">
+                    <section class="col-md-3 mb-4 text-center">
                         <h6 class="fw-bold">Soporte</h6>
                         <ul class="list-unstyled">
                             <li><a href="#" class="text-white text-decoration-none">Ayuda</a></li>
@@ -280,7 +280,7 @@
                         </ul>
                     </section>
 
-                    <section class="col-md-3 mb-4">
+                    <section class="col-md-3 mb-4 text-center">
                         <h6 class="fw-bold">Síguenos</h6>
                         <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
                         <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
@@ -296,10 +296,9 @@
             </section>
         </footer>
 
-
         <!-- Modals Consolas-->
         <section class="modal fade" id="ps5Modal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">PlayStation 5</h5>
@@ -321,7 +320,7 @@
         </section>
 
         <section class="modal fade" id="xboxModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">Xbox Series X</h5>
@@ -343,7 +342,7 @@
         </section>
 
         <section class="modal fade" id="switchModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">Nintendo Switch</h5>
@@ -366,7 +365,7 @@
         </section>
 
         <section class="modal fade" id="steamModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">Steam Deck</h5>
@@ -390,7 +389,7 @@
 
         <!-- Modals Consolas-->
         <section class="modal fade" id="gowModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">God of War: Ragnarok</h5>
@@ -410,7 +409,7 @@
         </section>
 
         <section class="modal fade" id="zeldaModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">Zelda: Tears of the Kingdom</h5>
@@ -430,7 +429,7 @@
         </section>
 
         <section class="modal fade" id="eldenModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">Elden Ring</h5>
@@ -450,7 +449,7 @@
         </section>
 
         <section class="modal fade" id="fifaModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">EA Sports FC 25</h5>
@@ -470,7 +469,7 @@
         </section>
 
         <section class="modal fade" id="minecraftModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">Minecraft</h5>
@@ -490,7 +489,7 @@
         </section>
 
         <section class="modal fade" id="cyberModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg">
+            <section class="modal-dialog modal-lg modal-dialog-centered">
                 <article class="modal-content">
                     <header class="modal-header">
                         <h5 class="modal-title fw-bold">Cyberpunk 2077</h5>
