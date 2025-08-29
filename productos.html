@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - PressNew</title>
+    <title>Productos - PressNew</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -14,32 +14,27 @@
     <header class="bg-dark text-white fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <section class="container-fluid">
-
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="img/Logo.png" alt="Logo" height="40" class="me-2">
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPressNew"
                     aria-controls="navbarPressNew" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <section class="collapse navbar-collapse" id="navbarPressNew">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="nosotros.html">Nosotros</a></li>
+                                href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
-
                     <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
                         <input class="form-control me-2" type="search"
                             placeholder="Buscar juegos, consolas, accesorios..." aria-label="Buscar">
                         <button class="btn btn-outline-light" type="submit"><img src="img/buscar.png" alt="Buscar"
                                 height="20"></button>
                     </form>
-
                     <a href="#" class="ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center text-white">
                         <i class="bi bi-person-circle fs-4"></i>
                     </a>
@@ -49,83 +44,56 @@
     </header>
 
     <!-- Main -->
-    <main class="mt-5">
-        <!-- Sección Hero -->
-        <section class="bg-light text-dark py-5 text-center">
-            <section class="container">
-                <h1 class="fw-bold">Sobre Nosotros</h1>
-                <p class="lead">Conoce más acerca de PressNew, tu tienda gamer de confianza.</p>
-            </section>
+    <main class="container my-5 pt-5">
+        <!-- Busqueda y filtros -->
+        <section class="mb-5">
+            <form class="row g-3">
+                <article class="col-md-4">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar productos...">
+                </article>
+                <article class="col-md-3">
+                    <select class="form-select" id="filterCategory">
+                        <option value="">Todas las categorías</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="juegos">Juegos</option>
+                        <option value="accesorios">Accesorios</option>
+                        <option value="ps5">Juegos PS5</option>
+                        <option value="xbox">Juegos Xbox Series X</option>
+                        <option value="switch">Juegos Nintendo Switch</option>
+                        <option value="pc">Juegos PC</option>
+                    </select>
+                </article>
+                <article class="col-md-3">
+                    <select class="form-select" id="filterPrice">
+                        <option value="">Ordenar por precio</option>
+                        <option value="asc">Menor a mayor</option>
+                        <option value="desc">Mayor a menor</option>
+                    </select>
+                </article>
+                <div class="col-md-2">
+                    <button id="btnLimpiar" type="button" class="btn btn-primary w-100">Limpiar</button>
+                </div>
+            </form>
         </section>
 
-        <!-- Nuestra Historia -->
-        <section class="container py-5">
-            <section class="row align-items-center">
-                <section class="col-md-6 mb-4">
-                    <img src="img/Logo.png" class="img-fluid rounded shadow mx-auto d-block" alt="Logo Tienda"
-                        style="max-width: 300px;">
-                </section>
-                <section class="col-md-6">
-                    <h2 class="fw-bold">Nuestra Historia</h2>
-                    <p>PressNew nació con la misión de acercar a todos los gamers los mejores productos, desde consolas
-                        hasta videojuegos, siempre al mejor precio. Creemos en la pasión por los
-                        videojuegos como un estilo de vida.</p>
-                    <p>Con años de experiencia en la industria, trabajamos día a día para ofrecer una experiencia de
-                        compra segura, rápida y llena de beneficios.</p>
-                </section>
+        <!-- Productos -->
+        <h2 class="mb-3">Productos</h2>
+        <section id="seccion-productos" class="row row-cols-1 row-cols-md-4 g-4 mb-5">
             </section>
-        </section>
 
-        <!-- Misión, Visión, Valores -->
-        <section class="bg-dark text-white py-5">
-            <section class="container">
-                <section class="row text-center g-4">
-                    <section class="col-md-4">
-                        <i class="bi bi-bullseye fs-1 mb-3"></i>
-                        <h4 class="fw-bold">Misión</h4>
-                        <p>Brindar productos gamer de calidad con el mejor servicio al cliente.</p>
-                    </section>
-                    <section class="col-md-4">
-                        <i class="bi bi-eye fs-1 mb-3"></i>
-                        <h4 class="fw-bold">Visión</h4>
-                        <p>Ser la tienda gamer líder en Latinoamérica, reconocida por la innovación y la confianza.</p>
-                    </section>
-                    <section class="col-md-4">
-                        <i class="bi bi-heart fs-1 mb-3"></i>
-                        <h4 class="fw-bold">Valores</h4>
-                        <p>Pasión, compromiso y confianza son los pilares que nos mueven.</p>
-                    </section>
-                </section>
-            </section>
-        </section>
-
-        <!-- Equipo -->
-        <section class="container py-5">
-            <header class="text-center mb-5">
-                <h2 class="fw-bold">Nuestro Equipo</h2>
-            </header>
-            <section class="row g-4">
-                <section class="col-md-3 text-center">
-                    <img src="img/equipo.png" class="rounded-circle mb-3 img-fluid" alt="Miembro 1">
-                    <h5 class="fw-bold">Jesus P. Matos Chuquino</h5>
-                </section>
-                <section class="col-md-3 text-center">
-                    <img src="img/equipo.png" class="rounded-circle mb-3 img-fluid" alt="Miembro 2">
-                    <h5 class="fw-bold">Edhu A. Macedo Salas</h5>
-                </section>
-                <section class="col-md-3 text-center">
-                    <img src="img/equipo.png" class="rounded-circle mb-3 img-fluid" alt="Miembro 3">
-                    <h5 class="fw-bold">Leonardo A. Beraun Garcia</h5>
-                </section>
-                <section class="col-md-3 text-center">
-                    <img src="img/equipo.png" class="rounded-circle mb-3 img-fluid" alt="Miembro 4">
-                    <h5 class="fw-bold">Bruno G. Tupayachi Carmen</h5>
-                </section>
-            </section>
-        </section>
+        <nav aria-label="Paginación de productos">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <button class="page-link" id="btn-anterior" aria-label="Anterior">Anterior</button>
+                </li>
+                <li class="page-item">
+                    <button class="page-link" id="btn-siguiente" aria-label="Siguiente">Siguiente</button>
+                </li>
+            </ul>
+        </nav>
     </main>
 
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="bg-dark text-white pt-4">
         <section class="container text-center text-md-start">
             <section class="row">
@@ -134,7 +102,6 @@
                     <p class="small">Tu tienda gamer de confianza. Consolas, videojuegos y accesorios al mejor
                         precio.</p>
                 </article>
-
                 <nav class="col-md-3 mb-4 text-center">
                     <h6 class="fw-bold">Navegación</h6>
                     <ul class="list-unstyled">
@@ -144,7 +111,6 @@
                         <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
                     </ul>
                 </nav>
-
                 <section class="col-md-3 mb-4 text-center">
                     <h6 class="fw-bold">Soporte</h6>
                     <ul class="list-unstyled">
@@ -154,7 +120,6 @@
                         <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
                     </ul>
                 </section>
-
                 <section class="col-md-3 mb-4 text-center">
                     <h6 class="fw-bold">Síguenos</h6>
                     <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
@@ -162,15 +127,14 @@
                     <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
                     <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
                 </section>
-
             </section>
         </section>
-
         <section class="bg-secondary text-center py-2">
             <small>&copy; 2025 PressNew. Todos los derechos reservados.</small>
         </section>
     </footer>
 
+    <script src="app/productos.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
