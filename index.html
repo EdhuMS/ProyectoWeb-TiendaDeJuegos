@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PressNew</title>
+    <title>GamesCenter</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -19,43 +19,64 @@
                     <img src="img/Logo.png" alt="Logo" height="40" class="me-2">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPressNew"
-                    aria-controls="navbarPressNew" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarGamesCenter" aria-controls="navbarGamesCenter" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <section class="collapse navbar-collapse" id="navbarPressNew">
+                <section class="collapse navbar-collapse" id="navbarGamesCenter">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
 
-                    <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Buscar juegos, consolas, accesorios..." aria-label="Buscar">
-                        <button class="btn btn-outline-light" type="submit"><img src="img/buscar.png" alt="Buscar"
-                                height="20"></button>
+                    <form class="d-flex ms-lg-3 mt-3 mt-lg-0 align-items-center" role="search">
+                        <section class="input-group">
+                            <input class="form-control" type="search"
+                                placeholder="Buscar juegos, consolas, accesorios..." aria-label="Buscar">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search fs-6 me-0"></i>
+                            </button>
+                        </section>
+
+                        <a href="login.html" class="ms-3 d-none d-lg-block text-white">
+                            <i class="bi bi-person-fill fs-4"></i>
+                        </a>
+                        <a href="#" class="ms-3 d-none d-lg-block text-white">
+                            <i class="bi bi-cart2 fs-4"></i>
+                        </a>
                     </form>
 
-                    <a href="#" class="ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center text-white">
-                        <i class="bi bi-person-circle fs-4"></i>
-                    </a>
+                    <ul class="navbar-nav d-block d-lg-none mt-3">
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <i class="bi bi-person-fill fs-4 me-2"></i>Iniciar Sesión
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-cart2 fs-4 me-2"></i>Mi Bolsa
+                            </a>
+                        </li>
+                    </ul>
                 </section>
             </section>
         </nav>
     </header>
 
     <!-- Main -->
-    <main class="mt-5">
+    <main style="margin-top: 4rem !important">
         <!-- Carrusel Principal -->
-        <section id="carouselPressNew" class="carousel slide" data-bs-ride="carousel">
+        <section id="carouselGamesCenter" class="carousel slide" data-bs-ride="carousel">
             <section class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselPressNew" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselGamesCenter" data-bs-slide-to="0" class="active"
                     aria-current="true"></button>
-                <button type="button" data-bs-target="#carouselPressNew" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carouselPressNew" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselGamesCenter" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselGamesCenter" data-bs-slide-to="2"></button>
             </section>
 
             <section class="carousel-inner">
@@ -69,24 +90,26 @@
                     <img src="img/Banner2.jpg" class="d-block w-100 img-fluid" alt="Ofertas exclusivas">
                     <figcaption class="carousel-caption">
                         <h2 class="display-6 fw-bold">Ofertas Semanales</h2>
-                        <p class="h4">Consolas, accesorios y más al mejor precio</p>
+                        <p class="h5">Consolas, accesorios y más al mejor precio</p>
                     </figcaption>
                 </figure>
 
                 <figure class="carousel-item">
                     <img src="img/Banner3.jpg" class="d-block w-100 img-fluid" alt="Nuevos lanzamientos">
                     <figcaption class="carousel-caption">
-                        <h2 class="display-6 fw-bold">Nuevos Lanzamientos</h2>
-                        <p class="h4">Descubre los juegos más esperados</p>
+                        <h2 class="h2 fw-bold">Nuevos Lanzamientos</h2>
+                        <p class="h5">Descubre los juegos más esperados</p>
                     </figcaption>
                 </figure>
             </section>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPressNew" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGamesCenter"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPressNew" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGamesCenter"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
@@ -108,7 +131,8 @@
                                 <img src="img/PS5.webp" class="img-fluid mb-3" alt="PlayStation 5">
                                 <h5 class="card-title mb-3">PlayStation 5</h5>
                                 <p class="card-text">La consola de Sony con gráficos 4K y SSD ultrarrápido.</p>
-                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#ps5Modal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal"
+                                    data-bs-target="#ps5Modal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -120,7 +144,8 @@
                                 <img src="img/XBOX X.png" class="img-fluid mb-3" alt="Xbox Series X">
                                 <h5 class="card-title mb-3">Xbox Series X</h5>
                                 <p class="card-text">La consola más potente de Microsoft, con Game Pass incluido.</p>
-                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#xboxModal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal"
+                                    data-bs-target="#xboxModal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -132,7 +157,8 @@
                                 <img src="img/Switch.webp" class="img-fluid mb-3" alt="Nintendo Switch">
                                 <h5 class="card-title mb-3">Nintendo Switch</h5>
                                 <p class="card-text">Consola híbrida de Nintendo, juega en casa o en portátil.</p>
-                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#switchModal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal"
+                                    data-bs-target="#switchModal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -144,7 +170,8 @@
                                 <img src="img/STEAM-DECK.png" class="img-fluid mb-3" alt="Steam Deck">
                                 <h5 class="card-title mb-3">Steam Deck</h5>
                                 <p class="card-text">La portátil de Valve con acceso a toda tu librería de Steam.</p>
-                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal" data-bs-target="#steamModal">Ver
+                                <button class="btn btn-primary mt-auto w-auto mx-auto" data-bs-toggle="modal"
+                                    data-bs-target="#steamModal">Ver
                                     más</button>
                             </figure>
                         </section>
@@ -240,7 +267,7 @@
         </section>
 
         <section class="bg-light text-dark py-5 text-center">
-            <h3 class="fw-bold mb-3">¡Forma parte de la comunidad PressNew!</h3>
+            <h3 class="fw-bold mb-3">¡Forma parte de la comunidad GamesCenter!</h3>
             <p class="mb-4">Crea tu cuenta para acceder a ofertas exclusivas, guardar tus favoritos y disfrutar del
                 mundo gamer al máximo.</p>
 
@@ -293,7 +320,7 @@
             </section>
 
             <section class="bg-secondary text-center py-2">
-                <small>&copy; 2025 PressNew. Todos los derechos reservados.</small>
+                <small>&copy; 2025 GamesCenter. Todos los derechos reservados.</small>
             </section>
         </footer>
 
@@ -397,7 +424,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </header>
                     <section class="modal-body text-center">
-                        <img src="img/GOW-Ragnarok.jpg" alt="God of War Ragnarok" class="img-fluid rounded mb-3" width="75%">
+                        <img src="img/GOW-Ragnarok.jpg" alt="God of War Ragnarok" class="img-fluid rounded mb-3"
+                            width="75%">
                         <p>Kratos y Atreus se enfrentan al apocalipsis nórdico en una historia épica llena de acción,
                             mitología y batallas impresionantes.</p>
                     </section>
@@ -417,7 +445,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </header>
                     <section class="modal-body text-center">
-                        <img src="img/Zelda.webp" alt="Zelda Tears of the Kingdom" class="img-fluid rounded mb-3" width="75%">
+                        <img src="img/Zelda.webp" alt="Zelda Tears of the Kingdom" class="img-fluid rounded mb-3"
+                            width="75%">
                         <p>Explora Hyrule como nunca antes en esta nueva entrega de la saga. Vive aventuras épicas,
                             resuelve acertijos y descubre secretos ocultos.</p>
                     </section>

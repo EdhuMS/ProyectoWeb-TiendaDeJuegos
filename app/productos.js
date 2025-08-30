@@ -14,17 +14,17 @@ function renderProductos(lista, contenedorId) {
     productosDeLaPagina.forEach(prod => {
         const card = `
             <article class="col">
-                <div class="card h-100 shadow-sm">
+                <section class="card h-100 shadow-sm">
                     <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
-                    <div class="card-body">
+                    <section class="card-body">
                         <h5 class="card-title">${prod.nombre}</h5>
                         <p class="card-text small">${prod.descripcion}</p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-between align-items-center">
+                    </section>
+                    <section class="card-footer d-flex justify-content-between align-items-center">
                         <span class="fw-bold">S/. ${prod.precio.toFixed(2)}</span>
                         <button class="btn btn-sm btn-primary">Comprar</button>
-                    </div>
-                </div>
+                    </section>
+                </section>
             </article>
         `;
         contenedor.innerHTML += card;
