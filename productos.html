@@ -72,44 +72,84 @@
     <!-- Main -->
     <main class="container my-5 pt-5">
         <!-- Busqueda y filtros -->
-        <section class="mb-5">
-            <form class="row g-3">
-                <article class="col-lg-4">
+        <section class="mb-4">
+            <form class="row g-3 align-items-center">
+                <article class="col-lg-6">
                     <input type="text" class="form-control" id="searchInput" placeholder="Buscar productos...">
                 </article>
+                <article class="col-6 col-lg-3">
+                    <select class="form-select" id="filterPrice">
+                        <option value="">Ordenar por precio</option>
+                        <option value="asc">Menor a mayor</option>
+                        <option value="desc">Mayor a menor</option>
+                    </select>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <button id="btnLimpiar" type="button" class="btn btn-primary w-100">Limpiar</button>
+                </article>
+            </form>
+
+            <section class="row justify-content-center my-3 g-2">
                 <article class="col-6 col-md-4 col-lg-2">
-                    <select class="form-select" id="filterJuegos">
-                        <option value="">Generos de Juegos</option>
-                        <option value="accion">ACCIÓN</option>
-                        <option value="aventura">AVENTURA</option>
-                        <option value="arcade">ARCADE</option>
-                        <option value="conduccion-carreras">CONDUCCIÓN Y CARRERAS</option>
-                        <option value="deportes">DEPORTES</option>
-                        <option value="ingenio">INGENIO</option>
-                        <option value="pelea">LUCHA / PELEA</option>
-                        <option value="plataforma">PLATAFORMA</option>
-                        <option value="shooter">SHOOTER</option>
-                        <option value="terror">TERROR</option>
-                        <option value="unico">ÚNICO</option>
-                        <option value="retro">CLÁSICO / RETRO</option>
-                        <option value="VR">JUEGOS VR</option>
-                        <option value="multijugador">MULTIJUGADOR LOCAL / PANTALLA DIVIDIDA</option>
-                        <option value="retrocompatible">RETROCOMPATIBLE</option>
-                    </select>
+                    <button class="btn btn-outline-dark category-btn w-100"
+                        data-category="playstation">PlayStation</button>
+                </article>
+                <article class="col-6 col-md-4 col-lg-2">
+                    <button class="btn btn-outline-dark category-btn w-100" data-category="xbox">Xbox</button>
                 </article>
                 <article class="col-6 col-md-4 col-lg-3">
-                    <select class="form-select" id="filterPlayStation">
-                        <option value="">Play Station</option>
-                        <option value="PS5">PS5</option>
-                        <option value="PS4">PS4</option>
-                        <option value="PS3">PS3</option>
-                        <option value="DELUXE">EXTRA | DELUXE | PREMIUM</option>
-                        <option value="PS-PLUS">PS PLUS | PLAYSTATION PLUS</option>
-                        <option value="PS-STORE">PS STORE | PLAYSTATION STORE</option>
-                        <option value="PS-CARDS">PSN CARDS - PLAYSTATION</option>
-                    </select>
+                    <button class="btn btn-outline-dark category-btn w-100" data-category="servicios">Servicios y
+                        Recargas</button>
                 </article>
                 <article class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-dark category-btn w-100" data-category="ofertas">Ofertas y
+                        Promociones</button>
+                </article>
+                <article class="col-6 col-md-4 col-lg-2">
+                    <button class="btn btn-outline-dark category-btn w-100"
+                        data-category="lanzamientos">Lanzamientos</button>
+                </article>
+            </section>
+
+            <section class="mb-0">
+                <section id="playstation-filters" class="row g-3 mt-3 d-none">
+                    <article class="col-6 col-md-4">
+                        <select class="form-select" id="filterPlayStation">
+                            <option value="">Play Station</option>
+                            <option value="PS5">PS5</option>
+                            <option value="PS4">PS4</option>
+                            <option value="PS3">PS3</option>
+                            <option value="DELUXE">EXTRA | DELUXE | PREMIUM</option>
+                            <option value="PS-PLUS">PS PLUS | PLAYSTATION PLUS</option>
+                            <option value="PS-STORE">PS STORE | PLAYSTATION STORE</option>
+                            <option value="PS-CARDS">PSN CARDS - PLAYSTATION</option>
+                        </select>
+                    </article>
+                    <article class="col-6 col-md-4">
+                        <select class="form-select" id="filterJuegos">
+                            <option value="">Generos de Juegos</option>
+                            <option value="accion">ACCIÓN</option>
+                            <option value="aventura">AVENTURA</option>
+                            <option value="arcade">ARCADE</option>
+                            <option value="conduccion-carreras">CONDUCCIÓN Y CARRERAS</option>
+                            <option value="deportes">DEPORTES</option>
+                            <option value="ingenio">INGENIO</option>
+                            <option value="pelea">LUCHA / PELEA</option>
+                            <option value="plataforma">PLATAFORMA</option>
+                            <option value="shooter">SHOOTER</option>
+                            <option value="terror">TERROR</option>
+                            <option value="unico">ÚNICO</option>
+                            <option value="retro">CLÁSICO / RETRO</option>
+                            <option value="VR">JUEGOS VR</option>
+                            <option value="multijugador">MULTIJUGADOR LOCAL / PANTALLA sectionIDIDA</option>
+                            <option value="retrocompatible">RETROCOMPATIBLE</option>
+                        </select>
+                    </article>
+                </section>
+            </section>
+
+            <section id="xbox-filters" class="row g-3 mt-3 d-none">
+                <article class="col-6 col-md-4">
                     <select class="form-select" id="filterXbox">
                         <option value="">Xbox</option>
                         <option value="XBOX-X/S">XBOX SERIES X|S</option>
@@ -119,7 +159,10 @@
                         <option value="XBOX-GIFT-CARDS">XBOX GIFT CARDS</option>
                     </select>
                 </article>
-                <article class="col-6 col-md-4 col-lg-3">
+            </section>
+
+            <section id="servicios-filters" class="row g-3 mt-3 d-none">
+                <article class="col-6 col-md-4">
                     <select class="form-select" id="filterServicios">
                         <option value="">Servicios y Recargas</option>
                         <option value="streaming">STREAMING</option>
@@ -127,7 +170,10 @@
                         <option value="tarjetas">TARJETAS</option>
                     </select>
                 </article>
-                <article class="col-6 col-md-4 col-lg-3">
+            </section>
+
+            <section id="ofertas-filters" class="row g-3 mt-3 d-none">
+                <article class="col-6 col-md-4">
                     <select class="form-select" id="filterOfertas">
                         <option value="">Ofertas y Promociones</option>
                         <option value="ofertas-semana">OFERTAS DE LA SEMANA</option>
@@ -137,7 +183,10 @@
                         <option value="combos">COMBOS</option>
                     </select>
                 </article>
-                <article class="col-6 col-md-4 col-lg-2">
+            </section>
+
+            <section id="lanzamientos-filters" class="row g-3 mt-3 d-none">
+                <article class="col-6 col-md-4">
                     <select class="form-select" id="filterLanzamientos">
                         <option value="">Lanzamientos</option>
                         <option value="estrenosPS5">ESTRENOS PS5</option>
@@ -148,28 +197,21 @@
                         <option value="proximosLanzamientos">PRÓXIMOS LANZAMIENTOS</option>
                     </select>
                 </article>
-                <article class="col-6 col-lg-2">
-                    <select class="form-select" id="filterPrice">
-                        <option value="">Ordenar por precio</option>
-                        <option value="asc">Menor a mayor</option>
-                        <option value="desc">Mayor a menor</option>
-                    </select>
-                </article>
-                <article class="col-6 col-lg-2">
-                    <button id="btnLimpiar" type="button" class="btn btn-primary w-100">Limpiar</button>
-                </article>
-            </form>
+            </section>
         </section>
 
         <!-- Productos -->
-        <h2 class="mb-3">Productos</h2>
+        <h2 class="mt-2 mb-3">Productos</h2>
         <section id="seccion-productos" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
         </section>
 
         <nav aria-label="Paginación de productos">
-            <ul class="pagination justify-content-center">
+            <ul class="pagination justify-content-center align-items-center">
                 <li class="page-item">
                     <button class="page-link" id="btn-anterior" aria-label="Anterior">Anterior</button>
+                </li>
+                <li class="page-item px-2">
+                    <span id="paginacion-info" class="text-secondary small"></span>
                 </li>
                 <li class="page-item">
                     <button class="page-link" id="btn-siguiente" aria-label="Siguiente">Siguiente</button>
@@ -205,7 +247,7 @@
                         <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
                     </ul>
                 </section>
-                
+
                 <section class="col-md-3 mb-4 text-center">
                     <h6 class="fw-bold">Síguenos</h6>
                     <a href="https://www.facebook.com/GamesCenter.pe" class="text-white me-3"><i
