@@ -1,0 +1,470 @@
+[
+  {
+    "id": 1,
+    "nombre": "PlayStation 5",
+    "categoria": "Consolas",
+    "plataforma": "PS5",
+    "precio": 2499.00,
+    "descripcion": "La consola más avanzada de Sony, con gráficos 4K, SSD ultrarrápido y juegos exclusivos.",
+    "imagen": "img/productos/Consolas/PS5.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Steam Deck",
+    "categoria": "Consolas",
+    "plataforma": "SteamOS",
+    "precio": 2199.00,
+    "descripcion": "Consola portátil de Valve que permite jugar títulos de PC en cualquier lugar con controles integrados.",
+    "imagen": "img/productos/Consolas/STEAM-DECK.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Xbox Series X",
+    "categoria": "Consolas",
+    "plataforma": "Xbox",
+    "precio": 2399.00,
+    "descripcion": "La consola más potente de Microsoft, con 12 teraflops, soporte para 8K y Game Pass.",
+    "imagen": "img/productos/Consolas/XBOX X.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Nintendo Switch OLED",
+    "categoria": "Consolas",
+    "plataforma": "Switch",
+    "precio": 1499.00,
+    "descripcion": "Consola híbrida con pantalla OLED de 7 pulgadas, ideal para jugar en casa o en movimiento.",
+    "imagen": "img/productos/Consolas/Switch.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "Nintendo Switch Lite",
+    "categoria": "Consolas",
+    "plataforma": "Switch",
+    "precio": 999.00,
+    "descripcion": "Modelo más compacto y ligero de Nintendo Switch, pensado exclusivamente para jugar en modo portátil.",
+    "imagen": "img/productos/Consolas/Switch.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "Xbox Series S",
+    "categoria": "Consolas",
+    "plataforma": "Xbox",
+    "precio": 1299.00,
+    "descripcion": "Versión más compacta y digital de la Xbox Series, con excelente rendimiento a bajo costo.",
+    "imagen": "img/productos/Consolas/XBOX X.png"
+  },
+  {
+    "id": 7,
+    "nombre": "PlayStation 5 Digital Edition",
+    "categoria": "Consolas",
+    "plataforma": "PS5",
+    "precio": 2099.00,
+    "descripcion": "Versión digital de la PS5 sin lector de discos, ideal para jugadores que prefieren descargas.",
+    "imagen": "img/productos/Consolas/PS5.webp"
+  },
+  {
+    "id": 8,
+    "nombre": "Nintendo Switch 2",
+    "categoria": "Consolas",
+    "plataforma": "Switch 2",
+    "precio": 1999.00,
+    "descripcion": "La nueva generación de la consola híbrida de Nintendo con mejor rendimiento y pantalla avanzada.",
+    "imagen": "img/productos/Consolas/switch2.webp"
+  },
+  {
+    "id": 9,
+    "nombre": "Spider-Man: Miles Morales",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 149.00,
+    "descripcion": "Acompaña a Miles en su aventura para convertirse en un nuevo Spider-Man con gráficos espectaculares en 4K.",
+    "imagen": "img/productos/Juegos/spiderman-miles.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Demon's Souls",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 189.00,
+    "descripcion": "Remake del clásico de FromSoftware con gráficos mejorados y una experiencia desafiante para los jugadores hardcore.",
+    "imagen": "img/productos/Juegos/demons-souls.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Ratchet & Clank: Rift Apart",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 189.00,
+    "descripcion": "Viaja entre dimensiones con Ratchet y su nuevo aliado Rivet en esta exclusiva aventura intergaláctica.",
+    "imagen": "img/productos/Juegos/ratchet-clank.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Horizon Forbidden West",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 189.00,
+    "descripcion": "Acompaña a Aloy en un viaje épico a través de tierras post-apocalípticas llenas de máquinas colosales.",
+    "imagen": "img/productos/Juegos/horizon-forbidden-west.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Final Fantasy XVI",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 189.00,
+    "descripcion": "La nueva entrega de la saga Final Fantasy con un enfoque más oscuro y combates llenos de acción.",
+    "imagen": "img/productos/Juegos/final-fantasy-xvi.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Gran Turismo 7",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 189.00,
+    "descripcion": "El simulador de carreras más realista con cientos de autos y circuitos legendarios de todo el mundo.",
+    "imagen": "img/productos/Juegos/gran-turismo-7.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "The Legend of Zelda: Breath of the Wild",
+    "categoria": "Juegos",
+    "plataforma": "Nintendo Switch",
+    "precio": 159.00,
+    "descripcion": "Explora un vasto mundo abierto y vive la aventura épica de Link en Hyrule.",
+    "imagen": "img/productos/Juegos/zelda-botw.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Super Mario Odyssey",
+    "categoria": "Juegos",
+    "plataforma": "Nintendo Switch",
+    "precio": 149.00,
+    "descripcion": "Acompaña a Mario y Cappy en una aventura mundial para rescatar a la Princesa Peach.",
+    "imagen": "img/productos/Juegos/super-mario-odyssey.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Pokémon Scarlet",
+    "categoria": "Juegos",
+    "plataforma": "Nintendo Switch",
+    "precio": 159.00,
+    "descripcion": "Explora la región de Paldea, atrapa Pokémon y conviértete en el mejor entrenador.",
+    "imagen": "img/productos/Juegos/pokemon-scarlet.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Metroid Dread",
+    "categoria": "Juegos",
+    "plataforma": "Nintendo Switch",
+    "precio": 159.00,
+    "descripcion": "Samus Aran regresa en una aventura de acción y exploración en 2D contra enemigos letales.",
+    "imagen": "img/productos/Juegos/metroid-dread.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Splatoon 3",
+    "categoria": "Juegos",
+    "plataforma": "Nintendo Switch",
+    "precio": 159.00,
+    "descripcion": "Enfréntate en batallas multijugador llenas de tinta en nuevos escenarios dinámicos.",
+    "imagen": "img/productos/Juegos/splatoon-3.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Mario Kart 8 Deluxe",
+    "categoria": "Juegos",
+    "plataforma": "Nintendo Switch",
+    "precio": 149.00,
+    "descripcion": "La experiencia de carreras definitiva con todos los personajes y pistas clásicas de Mario Kart.",
+    "imagen": "img/productos/Juegos/mario-kart-8-deluxe.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Halo Infinite",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 159.00,
+    "descripcion": "El Jefe Maestro regresa en una épica campaña de mundo semiabierto y multijugador online.",
+    "imagen": "img/productos/Juegos/halo-infinite.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "Forza Horizon 5",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 189.00,
+    "descripcion": "Explora un vibrante mundo abierto en México con cientos de autos y eventos dinámicos.",
+    "imagen": "img/productos/Juegos/forza-horizon-5.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "Gears 5",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 129.00,
+    "descripcion": "La saga de acción y disparos continúa con una historia intensa y multijugador competitivo.",
+    "imagen": "img/productos/Juegos/gears-5.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "FIFA 23",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 149.00,
+    "descripcion": "El simulador de fútbol definitivo con nuevas mecánicas de juego realista y licencias oficiales.",
+    "imagen": "img/productos/Juegos/fifa-23.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "Assassin’s Creed Valhalla",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 129.00,
+    "descripcion": "Conviértete en un legendario vikingo en esta entrega de mundo abierto de Assassin’s Creed.",
+    "imagen": "img/productos/Juegos/ac-valhalla.jpg"
+  },
+  {
+    "id": 26,
+    "nombre": "Elden Ring",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 189.00,
+    "descripcion": "Una aventura de mundo abierto oscura y desafiante creada por FromSoftware y George R. R. Martin.",
+    "imagen": "img/productos/Juegos/elden-ring.jpg"
+  },
+  {
+    "id": 27,
+    "nombre": "Control DualSense Inalámbrico",
+    "categoria": "Accesorios",
+    "plataforma": "PS5",
+    "precio": 249.00,
+    "descripcion": "El innovador mando de PlayStation 5 con gatillos adaptativos y respuesta háptica.",
+    "imagen": "img/productos/Accesorios/ps5-dualsense.jpg"
+  },
+  {
+    "id": 28,
+    "nombre": "Xbox Wireless Controller",
+    "categoria": "Accesorios",
+    "plataforma": "Xbox Series X",
+    "precio": 189.00,
+    "descripcion": "Mando oficial de Xbox con ergonomía mejorada y compatibilidad multiplataforma.",
+    "imagen": "img/productos/Accesorios/xbox-controller.jpg"
+  },
+  {
+    "id": 29,
+    "nombre": "Nintendo Switch Pro Controller",
+    "categoria": "Accesorios",
+    "plataforma": "Nintendo Switch",
+    "precio": 219.00,
+    "descripcion": "El mando Pro para Switch ofrece comodidad y precisión para largas sesiones de juego.",
+    "imagen": "img/productos/Accesorios/switch-pro-controller.jpg"
+  },
+  {
+    "id": 30,
+    "nombre": "Auriculares Pulse 3D",
+    "categoria": "Accesorios",
+    "plataforma": "PS5",
+    "precio": 359.00,
+    "descripcion": "Auriculares inalámbricos oficiales de PS5 diseñados para audio 3D inmersivo.",
+    "imagen": "img/productos/Accesorios/pulse-3d.jpg"
+  },
+  {
+    "id": 31,
+    "nombre": "Volante Logitech G923",
+    "categoria": "Accesorios",
+    "plataforma": "Multiplataforma",
+    "precio": 1199.00,
+    "descripcion": "Volante con tecnología TrueForce y pedales incluidos para simulación realista.",
+    "imagen": "img/productos/Accesorios/logitech-g923.jpg"
+  },
+  {
+    "id": 32,
+    "nombre": "Base de carga DualSense",
+    "categoria": "Accesorios",
+    "plataforma": "PS5",
+    "precio": 99.00,
+    "descripcion": "Carga hasta dos mandos DualSense de manera rápida y simultánea.",
+    "imagen": "img/productos/Accesorios/base-carga-dualsense.jpg"
+  },
+  {
+    "id": 33,
+    "nombre": "Memoria de 1TB SSD para Xbox Series X",
+    "categoria": "Accesorios",
+    "plataforma": "Xbox Series X",
+    "precio": 649.00,
+    "descripcion": "Almacenamiento de expansión para tu Xbox Series X, ideal para más juegos.",
+    "imagen": "img/productos/Accesorios/expansion-card-xbox.jpg"
+  },
+  {
+    "id": 34,
+    "nombre": "Mando Nacon Revolution Pro Controller",
+    "categoria": "Accesorios",
+    "plataforma": "PS4",
+    "precio": 389.00,
+    "descripcion": "Controlador de alta gama para PS4, diseñado para esports con joysticks personalizables.",
+    "imagen": "img/productos/Accesorios/nacon-revolution.jpg"
+  },
+  {
+    "id": 35,
+    "nombre": "Monitor Gamer Curvo ASUS ROG",
+    "categoria": "Accesorios",
+    "plataforma": "Multiplataforma",
+    "precio": 1899.00,
+    "descripcion": "Monitor curvo de 27 pulgadas con 144Hz, ideal para una experiencia de juego inmersiva.",
+    "imagen": "img/productos/Accesorios/monitor-asus.jpg"
+  },
+  {
+    "id": 36,
+    "nombre": "Teclado Mecánico Razer BlackWidow V3",
+    "categoria": "Accesorios",
+    "plataforma": "PC",
+    "precio": 459.00,
+    "descripcion": "Teclado mecánico con switches Green de Razer y retroiluminación RGB Chroma.",
+    "imagen": "img/productos/Accesorios/teclado-razer.jpg"
+  },
+  {
+    "id": 37,
+    "nombre": "Mouse Gamer Logitech G502",
+    "categoria": "Accesorios",
+    "plataforma": "PC",
+    "precio": 249.00,
+    "descripcion": "Mouse con sensor HERO, 11 botones programables y peso ajustable para gaming.",
+    "imagen": "img/productos/Accesorios/mouse-logitech.jpg"
+  },
+  {
+    "id": 38,
+    "nombre": "The Legend of Zelda: Tears of the Kingdom",
+    "categoria": "Juegos",
+    "plataforma": "Nintendo Switch",
+    "precio": 199.00,
+    "descripcion": "La esperada secuela de Breath of the Wild, expandiendo el mundo de Hyrule a los cielos y el subsuelo.",
+    "imagen": "img/productos/Juegos/zelda-totk.jpg"
+  },
+  {
+    "id": 39,
+    "nombre": "God of War Ragnarök",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 189.00,
+    "descripcion": "Kratos y Atreus se enfrentan al fin del mundo nórdico en esta épica conclusión.",
+    "imagen": "img/productos/Juegos/god-of-war-ragnarok.jpg"
+  },
+  {
+    "id": 40,
+    "nombre": "Cyberpunk 2077",
+    "categoria": "Juegos",
+    "plataforma": "PC",
+    "precio": 179.00,
+    "descripcion": "Un RPG de mundo abierto ambientado en el futuro oscuro de Night City.",
+    "imagen": "img/productos/Juegos/cyberpunk-2077.jpg"
+  },
+  {
+    "id": 41,
+    "nombre": "Diablo IV",
+    "categoria": "Juegos",
+    "plataforma": "PC",
+    "precio": 219.00,
+    "descripcion": "La cuarta entrega de la aclamada saga de rol de acción con un mundo abierto y oscuro.",
+    "imagen": "img/productos/Juegos/diablo-iv.jpg"
+  },
+  {
+    "id": 42,
+    "nombre": "Starfield",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 229.00,
+    "descripcion": "El nuevo RPG de los creadores de Skyrim, en el que puedes explorar más de 1000 planetas.",
+    "imagen": "img/productos/Juegos/starfield.jpg"
+  },
+  {
+    "id": 43,
+    "nombre": "Nintendo Switch V2",
+    "categoria": "Consolas",
+    "plataforma": "Switch",
+    "precio": 1299.00,
+    "descripcion": "El modelo original de Nintendo Switch, actualizado con una batería de mayor duración.",
+    "imagen": "img/productos/Consolas/SwitchV2.webp"
+  },
+  {
+    "id": 44,
+    "nombre": "Cyberpunk 2077 (Ultimate Edition)",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 199.00,
+    "descripcion": "Incluye el juego base y la expansión 'Phantom Liberty'.",
+    "imagen": "img/productos/Juegos/cyberpunk-ultimate.jpg"
+  },
+  {
+    "id": 45,
+    "nombre": "Elden Ring: Shadow of the Erdtree",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 129.00,
+    "descripcion": "La esperada expansión del aclamado juego de FromSoftware, con nuevas áreas y enemigos.",
+    "imagen": "img/productos/Juegos/elden-ring-dlc.jpg"
+  },
+  {
+    "id": 46,
+    "nombre": "Star Wars Jedi: Survivor",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 179.00,
+    "descripcion": "Cal Kestis debe sobrevivir a la persecución del Imperio en esta secuela de acción y aventura.",
+    "imagen": "img/productos/Juegos/jedi-survivor.jpg"
+  },
+  {
+    "id": 47,
+    "nombre": "The Last of Us Part I",
+    "categoria": "Juegos",
+    "plataforma": "PS5",
+    "precio": 199.00,
+    "descripcion": "Remake del clásico de Naughty Dog, con gráficos y jugabilidad mejorados.",
+    "imagen": "img/productos/Juegos/the-last-of-us.jpg"
+  },
+  {
+    "id": 48,
+    "nombre": "Marvel's Guardians of the Galaxy",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 99.00,
+    "descripcion": "Aventura narrativa donde asumes el rol de Star-Lord en una misión para salvar el universo.",
+    "imagen": "img/productos/Juegos/guardians-galaxy.jpg"
+  },
+  {
+    "id": 49,
+    "nombre": "Red Dead Redemption 2",
+    "categoria": "Juegos",
+    "plataforma": "Xbox Series X",
+    "precio": 129.00,
+    "descripcion": "Una épica historia del viejo oeste, con uno de los mundos abiertos más detallados.",
+    "imagen": "img/productos/Juegos/rdr2.jpg"
+  },
+  {
+    "id": 50,
+    "nombre": "Audífonos Astro A50",
+    "categoria": "Accesorios",
+    "plataforma": "Multiplataforma",
+    "precio": 1099.00,
+    "descripcion": "Auriculares inalámbricos de alta gama para una experiencia de audio superior.",
+    "imagen": "img/productos/Accesorios/astro-a50.jpg"
+  },
+  {
+    "id": 51,
+    "nombre": "Teclado Razer Huntsman Mini",
+    "categoria": "Accesorios",
+    "plataforma": "PC",
+    "precio": 529.00,
+    "descripcion": "Teclado mecánico ultra-compacto con switches ópticos para un rendimiento de élite.",
+    "imagen": "img/productos/Accesorios/razer-huntsman.jpg"
+  },
+  {
+    "id": 52,
+    "nombre": "Control Elite Series 2",
+    "categoria": "Accesorios",
+    "plataforma": "Xbox Series X",
+    "precio": 899.00,
+    "descripcion": "Controlador de grado profesional para Xbox con componentes intercambiables.",
+    "imagen": "img/productos/Accesorios/elite-controller-2.jpg"
+  }
+]
