@@ -23,7 +23,7 @@ function renderProductos(lista, contenedorId) {
                 <section class="card h-100 shadow-sm">
                     <img src="${prod.imagen}" class="card-img-top" alt="${prod.titulo}">
                     <section class="card-body">
-                        <h5 class="card-title">${prod.titulo}</h5>
+                        <h6 class="card-title">${prod.titulo}</h6>
                     </section>
                     <section class="card-footer d-flex justify-content-between align-items-center">
                         <span class="fw-bold">S/ ${prod.precio.toFixed(2)}</span>
