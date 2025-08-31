@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const formBusqueda = inputBusqueda.closest("form");
         const btnBuscar = formBusqueda.querySelector("button[type='submit']");
 
-        // Validación y control del botón de búsqueda
         function toggleBotonBuscar() {
             btnBuscar.disabled = inputBusqueda.value.trim().length === 0;
         }
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         });
 
-        // Manejar el envío del formulario
         formBusqueda.addEventListener("submit", (e) => {
             e.preventDefault();
             const query = inputBusqueda.value.trim();
@@ -40,7 +38,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         });
 
-        // Oculta los resultados si el usuario hace clic fuera del campo de búsqueda
         document.addEventListener("click", (e) => {
             if (!formBusqueda.contains(e.target)) {
                 resultadosBusqueda.style.display = "none";
