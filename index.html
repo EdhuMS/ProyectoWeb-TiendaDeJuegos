@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Header -->
     <header class="bg-dark text-white fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -69,7 +69,7 @@
     </header>
 
     <!-- Main -->
-    <main style="margin-top: 4rem !important">
+    <main class="flex-grow-1" style="margin-top: 4rem !important">
         <!-- Carrusel Principal -->
         <section id="carouselGamesCenter" class="carousel slide" data-bs-ride="carousel">
             <section class="carousel-indicators">
@@ -116,8 +116,8 @@
         </section>
 
         <!-- Principales Consolas en el Mundo Gamer -->
-        <section class="py-5 bg-light">
-            <section class="container">
+        <section class="py-4 bg-light">
+            <section class="container-md">
                 <header class="text-center mb-5">
                     <h2 class="display-5 fw-bold">Principales Consolas en el Mundo Gamer</h2>
                     <p class="h6 text-muted">Explora las consolas más influyentes que han marcado la historia de los
@@ -125,7 +125,7 @@
                 </header>
 
                 <section class="row g-4">
-                    <article class="col-6 col-lg-3">
+                    <article class="col-md-6 col-lg-3">
                         <section class="card h-100">
                             <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/PS5.webp" class="img-fluid mb-3" alt="PlayStation 5">
@@ -138,7 +138,7 @@
                         </section>
                     </article>
 
-                    <article class="col-6 col-lg-3">
+                    <article class="col-md-6 col-lg-3">
                         <section class="card h-100">
                             <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/XBOX X.png" class="img-fluid mb-3" alt="Xbox Series X">
@@ -151,7 +151,7 @@
                         </section>
                     </article>
 
-                    <article class="col-6 col-lg-3">
+                    <article class="col-md-6 col-lg-3">
                         <section class="card h-100">
                             <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/Switch.webp" class="img-fluid mb-3" alt="Nintendo Switch">
@@ -164,7 +164,7 @@
                         </section>
                     </article>
 
-                    <article class="col-6 col-lg-3">
+                    <article class="col-md-6 col-lg-3">
                         <section class="card h-100">
                             <figure class="card-body text-center flex-column d-flex">
                                 <img src="img/STEAM-DECK.png" class="img-fluid mb-3" alt="Steam Deck">
@@ -176,98 +176,112 @@
                             </figure>
                         </section>
                     </article>
-
                 </section>
             </section>
         </section>
 
-        <!-- Videojuegos Destacados -->
-        <section class="py-5 bg-dark">
-            <article class="container">
-                <header class="text-center mb-4 text-light">
-                    <h2 class="display-5 fw-bold">Videojuegos Destacados</h2>
-                    <p class="h6 text-muted">Explora algunos de los títulos más populares del mundo gamer</p>
+        <!-- Ofertas de la Semana -->
+        <section class="py-4 bg-dark">
+            <section class="container-md">
+                <header class="text-center mb-3 text-light">
+                    <h2 class="display-6 text-center fw-bold mb-2">Ofertas de la Semana</h2>
+                    <p class="mb-3">Las ofertas de la semana están dedicadas exclusivamente a juegos de PlayStation 4 y
+                        PlayStation 5. Aprovecha precios especiales en títulos seleccionados, renueva tu colección y
+                        disfruta de lo mejor del universo PlayStation. ¡No dejes pasar estas oportunidades únicas!</p>
                 </header>
-
-                <section class="row g-4">
-
-                    <article class="col-md-4">
-                        <section class="card h-100">
-                            <img src="img/GOW-Ragnarok.jpg" class="card-img-top" alt="God of War">
-                            <section class="card-body text-center">
-                                <h5 class="card-title">God of War: Ragnarok</h5>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gowModal">
-                                    Ver más
-                                </button>
-                            </section>
-                        </section>
-                    </article>
-
-                    <article class="col-md-4">
-                        <section class="card h-100">
-                            <img src="img/Zelda.webp" class="card-img-top" alt="Zelda">
-                            <section class="card-body text-center">
-                                <h5 class="card-title">Zelda: Tears of the Kingdom</h5>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#zeldaModal">
-                                    Ver más
-                                </button>
-                            </section>
-                        </section>
-                    </article>
-
-                    <article class="col-md-4">
-                        <section class="card h-100">
-                            <img src="img/ElderRing.jpg" class="card-img-top" alt="Elden Ring">
-                            <section class="card-body text-center">
-                                <h5 class="card-title">Elden Ring</h5>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eldenModal">
-                                    Ver más
-                                </button>
-                            </section>
-                        </section>
-                    </article>
-
-                    <article class="col-md-4">
-                        <section class="card h-100">
-                            <img src="img/FC25.webp" class="card-img-top" alt="FIFA 23">
-                            <section class="card-body text-center">
-                                <h5 class="card-title">EA Sports FC 25</h5>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fifaModal">
-                                    Ver más
-                                </button>
-                            </section>
-                        </section>
-                    </article>
-
-                    <article class="col-md-4">
-                        <section class="card h-100">
-                            <img src="img/Minecraft.jpg" class="card-img-top" alt="Minecraft">
-                            <section class="card-body text-center">
-                                <h5 class="card-title">Minecraft</h5>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minecraftModal">
-                                    Ver más
-                                </button>
-                            </section>
-                        </section>
-                    </article>
-
-                    <article class="col-md-4">
-                        <section class="card h-100">
-                            <img src="img/Ciberpunk.webp" class="card-img-top" alt="Cyberpunk 2077">
-                            <section class="card-body text-center">
-                                <h5 class="card-title">Cyberpunk 2077</h5>
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cyberModal">
-                                    Ver más
-                                </button>
-                            </section>
-                        </section>
-                    </article>
+                <section class="row flex-nowrap overflow-auto g-4 mt-3 mb-4" id="ofertas-container">
                 </section>
-            </article>
+            </section>
         </section>
 
-        <section class="bg-light text-dark py-5 text-center">
-            <h3 class="fw-bold mb-3">¡Forma parte de la comunidad GamesCenter!</h3>
+        <!-- Combos -->
+        <section class="py-4 bg-light">
+            <section class="container-md">
+                <header class="text-center mb-3 text-dark">
+                    <h2 class="display-6 text-center fw-bold mb-2">Combos</h2>
+                    <p class="mb-3">Descubre nuestros combos especiales: cada combo incluye una colección de juegos
+                        icónicos, como la saga de Crash Bandicoot o God of War, reunidos en un solo paquete para que
+                        vivas la mejor experiencia gamer. ¡Lleva más, ahorra más y disfruta tus sagas favoritas!</p>
+                </header>
+                <section class="row flex-nowrap overflow-auto g-4 mt-3 mb-4" id="combos-container">
+                </section>
+            </section>
+        </section>
+
+        <!-- Estrenos XBOX -->
+        <section class="py-4 bg-dark">
+            <section class="container-md">
+                <header class="text-center mb-3 text-light">
+                    <h2 class="display-6 text-center fw-bold mb-2">Estrenos Xbox</h2>
+                    <p class="mb-3">Descubre los últimos estrenos de Xbox: juegos innovadores, gráficos de última
+                        generación y experiencias exclusivas para todos los fanáticos. ¡No te pierdas las novedades y
+                        vive la emoción del mundo gamer con Xbox!</p>
+                </header>
+                <section class="row flex-nowrap overflow-auto g-4 mt-3 mb-4" id="estrenosXbox-container">
+                </section>
+            </section>
+        </section>
+
+        <!-- Proximos Lanzamientos -->
+        <section class="py-4 bg-light">
+            <section class="container-md">
+                <header class="text-center mb-3 text-dark">
+                    <h2 class="display-6 text-center fw-bold mb-2">Proximos Lanzamientos</h2>
+                    <p class="mb-3">Prepárate para los próximos lanzamientos más esperados del mundo gamer. Mantente al
+                        día con las novedades, reserva tus juegos favoritos y sé el primero en disfrutar de nuevas
+                        aventuras, historias y experiencias únicas. ¡No te pierdas lo que está por venir!</p>
+                </header>
+                <section class="row flex-nowrap overflow-auto g-4 mt-3 mb-4" id="lanzamientos-container">
+                </section>
+            </section>
+        </section>
+
+        <!-- Tarjetas -->
+        <section class="py-4 bg-dark">
+            <section class="container-md">
+                <header class="text-center mb-3 text-light">
+                    <h2 class="display-6 text-center fw-bold mb-2">Tarjetas</h2>
+                    <p class="mb-3">Adquiere tarjetas prepago y membresías para PlayStation, Xbox, Nintendo y Steam.
+                        Recarga tu saldo, accede a contenido exclusivo y disfruta de tus juegos favoritos sin límites.
+                        ¡Elige la tarjeta que necesitas y potencia tu experiencia gamer!</p>
+                </header>
+                <section class="row flex-nowrap overflow-auto g-4 mt-3 mb-4" id="tarjetas-container">
+                </section>
+            </section>
+        </section>
+
+        <!-- Recargas -->
+        <section class="py-4 bg-light">
+            <section class="container-md">
+                <header class="text-center mb-3 text-dark">
+                    <h2 class="display-6 text-center fw-bold mb-2">Recargas</h2>
+                    <p class="mb-3">Recarga tus cuentas de PlayStation, Xbox, Nintendo y Steam de forma rápida y segura.
+                        Elige el monto que necesitas, recibe tu código al instante y sigue disfrutando de tus juegos
+                        favoritos sin interrupciones. ¡Haz tu recarga y mantén tu experiencia gamer siempre activa!</p>
+                </header>
+                <section class="row flex-nowrap overflow-auto g-4 mt-3 mb-4" id="recargas-container">
+                </section>
+            </section>
+        </section>
+
+        <!-- Nuevos Lanzamientos -->
+        <section class="py-4 bg-dark">
+            <section class="container-md">
+                <header class="text-center mb-3 text-light">
+                    <h2 class="display-6 text-center fw-bold mb-2">Nuevos Lanzamientos</h2>
+                    <p class="mb-3">Descubre los nuevos lanzamientos que están revolucionando el mundo gamer. Encuentra
+                        los títulos más recientes para todas las plataformas, desde aventuras épicas hasta juegos
+                        multijugador competitivos. Mantente actualizado y sé el primero en disfrutar de las últimas
+                        novedades que llegan a GamesCenter.</p>
+                </header>
+                <section class="row flex-nowrap overflow-auto g-4 mt-3 mb-4" id="nuevosLanzamientos-container">
+                </section>
+            </section>
+        </section>
+
+        <!-- Unirse a la comunidad -->
+        <section class="bg-light text-dark py-4 text-center">
+            <h3 class="fw-bold mb-3">¡Forma parte de la comunidad Games Center!</h3>
             <p class="mb-4">Crea tu cuenta para acceder a ofertas exclusivas, guardar tus favoritos y disfrutar del
                 mundo gamer al máximo.</p>
 
@@ -276,272 +290,133 @@
                 <a href="login.html" class="btn btn-outline-success btn-lg">Iniciar Sesión</a>
             </section>
         </section>
-
-
-        <!-- Footer-->
-        <footer class="bg-dark text-white pt-4">
-            <section class="container text-center text-md-start">
-                <section class="row">
-                    <article class="col-md-3 mb-4 text-center">
-                        <img src="img/Logo.png" alt="Logo" width="75%" class="mb-2">
-                        <p class="small">Tu tienda gamer de confianza. Consolas, videojuegos y accesorios al mejor
-                            precio.</p>
-                    </article>
-
-                    <nav class="col-md-3 mb-4 text-center">
-                        <h6 class="fw-bold">Navegación</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
-                            <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
-                            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
-                            <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
-                        </ul>
-                    </nav>
-
-                    <section class="col-md-3 mb-4 text-center">
-                        <h6 class="fw-bold">Soporte</h6>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white text-decoration-none">Ayuda</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
-                        </ul>
-                    </section>
-                    
-                    <section class="col-md-3 mb-4 text-center">
-                        <h6 class="fw-bold">Síguenos</h6>
-                        <a href="https://www.facebook.com/GamesCenter.pe" class="text-white me-3"><i
-                                class="bi bi-facebook fs-4"></i></a>
-                        <a href="https://www.instagram.com/games_center_peru" class="text-white me-3"><i
-                                class="bi bi-instagram fs-4"></i></a>
-                        <a href="https://www.tiktok.com/@gamescenter.pe" class="text-white me-3"><i
-                                class="bi bi-tiktok fs-4"></i></a>
-                        <a href="https://www.youtube.com/@gamescenterperu" class="text-white"><i
-                                class="bi bi-youtube fs-4"></i></a>
-                    </section>
-                </section>
-            </section>
-
-            <section class="bg-secondary text-center py-2">
-                <small>&copy; 2025 GamesCenter. Todos los derechos reservados.</small>
-            </section>
-        </footer>
-
-        <!-- Modals Consolas-->
-        <section class="modal fade" id="ps5Modal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">PlayStation 5</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/PS5.webp" alt="PlayStation 5" class="img-fluid rounded mb-3" width="45%">
-                        <p>
-                            La PlayStation 5 ofrece un SSD ultrarrápido, gráficos en 4K y el innovador mando DualSense
-                            con retroalimentación háptica y gatillos adaptativos para una experiencia inmersiva.
-                        </p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="xboxModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">Xbox Series X</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/XBOX X.png" alt="Xbox Series X" class="img-fluid rounded mb-3" width="45%">
-                        <p>
-                            La Xbox Series X es la consola más potente de Microsoft, con soporte para 4K nativo,
-                            120 FPS y retrocompatibilidad con miles de títulos de generaciones anteriores.
-                        </p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="switchModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">Nintendo Switch</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/Switch.webp" alt="Nintendo Switch" class="img-fluid rounded mb-3" width="45%">
-                        <p>
-                            La Nintendo Switch combina juego en casa y portátil. Con títulos exclusivos como
-                            <em>Zelda: Breath of the Wild</em> y <em>Mario Kart 8 Deluxe</em>, es la consola más
-                            versátil para todo tipo de jugadores.
-                        </p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="steamModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">Steam Deck</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/STEAM-DECK.png" alt="Steam Deck" class="img-fluid rounded mb-3" width="45%">
-                        <p>
-                            La Steam Deck es la consola portátil de Valve que permite acceder a toda tu biblioteca de
-                            Steam
-                            con un diseño ergonómico, potencia de PC y soporte para mods y periféricos.
-                        </p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <!-- Modals Consolas-->
-        <section class="modal fade" id="gowModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">God of War: Ragnarok</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/GOW-Ragnarok.jpg" alt="God of War Ragnarok" class="img-fluid rounded mb-3"
-                            width="75%">
-                        <p>Kratos y Atreus se enfrentan al apocalipsis nórdico en una historia épica llena de acción,
-                            mitología y batallas impresionantes.</p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="zeldaModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">Zelda: Tears of the Kingdom</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/Zelda.webp" alt="Zelda Tears of the Kingdom" class="img-fluid rounded mb-3"
-                            width="75%">
-                        <p>Explora Hyrule como nunca antes en esta nueva entrega de la saga. Vive aventuras épicas,
-                            resuelve acertijos y descubre secretos ocultos.</p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="eldenModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">Elden Ring</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/ElderRing.jpg" alt="Elden Ring" class="img-fluid rounded mb-3" width="75%">
-                        <p>El mundo abierto de fantasía oscura creado por FromSoftware y George R. R. Martin te espera.
-                            Desafíos brutales y exploración sin límites.</p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="fifaModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">EA Sports FC 25</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/FC25.webp" alt="FC 25" class="img-fluid rounded mb-3" width="75%">
-                        <p>La experiencia de fútbol más realista con nuevas mecánicas de juego, ligas completas y la
-                            Copa Mundial incluida.</p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="minecraftModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">Minecraft</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/Minecraft.jpg" alt="Minecraft" class="img-fluid rounded mb-3" width="75%">
-                        <p>Construye, explora y sobrevive en un mundo infinito de bloques. El clásico que sigue siendo
-                            un fenómeno mundial.</p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
-
-        <section class="modal fade" id="cyberModal" tabindex="-1" aria-hidden="true">
-            <section class="modal-dialog modal-lg modal-dialog-centered">
-                <article class="modal-content">
-                    <header class="modal-header">
-                        <h5 class="modal-title fw-bold">Cyberpunk 2077</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </header>
-                    <section class="modal-body text-center">
-                        <img src="img/Ciberpunk.webp" alt="Cyberpunk 2077" class="img-fluid rounded mb-3 " width="75%">
-                        <p>Sumérgete en Night City, una metrópolis futurista llena de acción, decisiones narrativas y
-                            una atmósfera única de ciencia ficción.</p>
-                    </section>
-                    <footer class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <a href="#" class="btn btn-primary">Obtener ahora</a>
-                    </footer>
-                </article>
-            </section>
-        </section>
     </main>
 
+    <!-- Footer-->
+    <footer class="bg-dark text-white pt-4">
+        <section class="container text-center text-md-start">
+            <section class="row">
+                <article class="col-md-3 mb-4 text-center">
+                    <img src="img/Logo.png" alt="Logo" width="75%" class="mb-2">
+                    <p class="small">Tu tienda gamer de confianza. Consolas, videojuegos y accesorios al mejor
+                        precio.</p>
+                </article>
+
+                <nav class="col-md-3 mb-4 text-center">
+                    <h6 class="fw-bold">Navegación</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
+                        <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <section class="col-md-3 mb-4 text-center">
+                    <h6 class="fw-bold">Soporte</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Ayuda</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdfpIOJyGtQrcIrnz-O0sDKnInk3Z_A9x-f8ddTvis9PKCg4w/viewform?usp=send_form" class="text-white text-decoration-none">Libro de Reclamaciones</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
+                    </ul>
+                </section>
+
+                <section class="col-md-3 mb-4 text-center">
+                    <h6 class="fw-bold">Síguenos</h6>
+                    <a href="https://www.facebook.com/GamesCenter.pe" class="text-white me-3"><i
+                            class="bi bi-facebook fs-4"></i></a>
+                    <a href="https://www.instagram.com/games_center_peru" class="text-white me-3"><i
+                            class="bi bi-instagram fs-4"></i></a>
+                    <a href="https://www.tiktok.com/@gamescenter.pe" class="text-white me-3"><i
+                            class="bi bi-tiktok fs-4"></i></a>
+                    <a href="https://www.youtube.com/@gamescenterperu" class="text-white"><i
+                            class="bi bi-youtube fs-4"></i></a>
+                </section>
+            </section>
+        </section>
+
+        <section class="bg-secondary text-center py-2">
+            <small>&copy; 2025 GamesCenter. Todos los derechos reservados.</small>
+        </section>
+    </footer>
+
+    <!-- Modals Consolas-->
+    <section class="modal fade" id="ps5Modal" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-lg modal-dialog-centered">
+            <article class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title fw-bold">PlayStation 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+                <section class="modal-body text-center">
+                    <img src="img/PS5.webp" alt="PlayStation 5" class="img-fluid rounded mb-3" width="45%">
+                    <p>
+                        La PlayStation 5 ofrece un SSD ultrarrápido, gráficos en 4K y el innovador mando DualSense
+                        con retroalimentación háptica y gatillos adaptativos para una experiencia inmersiva.
+                    </p>
+                </section>
+            </article>
+        </section>
+    </section>
+
+    <section class="modal fade" id="xboxModal" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-lg modal-dialog-centered">
+            <article class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title fw-bold">Xbox Series X</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+                <section class="modal-body text-center">
+                    <img src="img/XBOX X.png" alt="Xbox Series X" class="img-fluid rounded mb-3" width="45%">
+                    <p>
+                        La Xbox Series X es la consola más potente de Microsoft, con soporte para 4K nativo,
+                        120 FPS y retrocompatibilidad con miles de títulos de generaciones anteriores.
+                    </p>
+                </section>
+            </article>
+        </section>
+    </section>
+
+    <section class="modal fade" id="switchModal" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-lg modal-dialog-centered">
+            <article class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title fw-bold">Nintendo Switch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+                <section class="modal-body text-center">
+                    <img src="img/Switch.webp" alt="Nintendo Switch" class="img-fluid rounded mb-3" width="45%">
+                    <p>
+                        La Nintendo Switch combina juego en casa y portátil. Con títulos exclusivos como
+                        <em>Zelda: Breath of the Wild</em> y <em>Mario Kart 8 Deluxe</em>, es la consola más
+                        versátil para todo tipo de jugadores.
+                    </p>
+                </section>
+            </article>
+        </section>
+    </section>
+
+    <section class="modal fade" id="steamModal" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-lg modal-dialog-centered">
+            <article class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title fw-bold">Steam Deck</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+                <section class="modal-body text-center">
+                    <img src="img/STEAM-DECK.png" alt="Steam Deck" class="img-fluid rounded mb-3" width="45%">
+                    <p>
+                        La Steam Deck es la consola portátil de Valve que permite acceder a toda tu biblioteca de
+                        Steam
+                        con un diseño ergonómico, potencia de PC y soporte para mods y periféricos.
+                    </p>
+                </section>
+            </article>
+        </section>
+    </section>
+
+    <script src="app/index.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

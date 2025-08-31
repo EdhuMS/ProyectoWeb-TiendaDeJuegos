@@ -38,7 +38,7 @@ function renderDetalleProducto(prod) {
                 <img src="${prod.imagen}" class="img-fluid rounded shadow-sm" alt="${prod.titulo}" style="max-height: 500px; object-fit: contain;">
             </section>
 
-            <section class="col-md-6 col-lg-5 mb-3">
+            <section class="col-md-6 col-lg-4 col-xl-5 mb-3">
                 <h2 class="fw-bold">${prod.titulo}</h2>
                 <h3 class="text-success fw-bold">S/ ${prod.precio.toFixed(2)}</h3>
                 <hr>
@@ -48,7 +48,7 @@ function renderDetalleProducto(prod) {
                 <p>${prod.categorias.join(', ')}</p>
             </section>
 
-            <section class="col-lg-3 mb-3">
+            <section class="col-lg-4 col-xl-3 mb-3">
                 <div class="card p-4 shadow-sm border-0 bg-dark text-light">
                     <h5 class="fw-bold card-title mb-4 text-center">MEDIOS DE PAGO</h5>
                     <section class="bg-light mb-4 align-items-center justify-content-center d-flex p-1 rounded">
@@ -85,7 +85,7 @@ function renderDetalleProducto(prod) {
 function renderSeccionesAdicionales(prod) {
     const contenedorDescripcion = document.getElementById('seccion-descripcion-larga');
     contenedorDescripcion.innerHTML = `
-        <h3 class="fw-bold">Descripción Completa</h3>
+        <h3 class="fw-bold">Descripción</h3>
         <p>${prod.descripcion_larga.replace(/\n/g, '<br>')}</p>
     `;
 
