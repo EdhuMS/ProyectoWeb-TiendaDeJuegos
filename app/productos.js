@@ -68,16 +68,7 @@ function actualizarBotonesPaginacion(totalProductos) {
 }
 
 function manejarFiltros() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const busqueda = urlParams.get('q') ? decodeURIComponent(urlParams.get('q')).toLowerCase() : document.getElementById('searchInput').value.toLowerCase();
-    
-    if(urlParams.has('q')) {
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput) {
-            searchInput.value = decodeURIComponent(urlParams.get('q'));
-        }
-    }
-    
+    const busqueda = document.getElementById('searchInput').value.toLowerCase();
     const precioFiltro = document.getElementById('filterPrice').value;
 
     let listaFiltrada = [...todosLosProductos];
@@ -313,6 +304,15 @@ async function cargarProductos() {
         const response = await fetch("data/productos.JSON");
         todosLosProductos = await response.json();
         productosFiltrados = [...todosLosProductos];
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const busquedaURL = urlParams.get('q');
+        if (busquedaURL) {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.value = decodeURIComponent(busquedaURL);
+            }
+        }
 
         manejarFiltros();
         renderProductos(productosFiltrados, "seccion-productos");
