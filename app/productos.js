@@ -1,6 +1,6 @@
 let todosLosProductos = [];
 let productosFiltrados = [];
-const productosPorPagina = 16;
+const productosPorPagina = 24;
 let paginaActual = 1;
 
 function renderProductos(lista, contenedorId) {
