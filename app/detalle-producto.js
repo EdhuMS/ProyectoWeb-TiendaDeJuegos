@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const tituloDecodificado = decodeURIComponent(tituloCodificado);
 
         if (!tituloDecodificado) {
-            document.getElementById('seccion-detalle-producto').innerHTML = `<h3 class="text-center">Producto no encontrado.</h3>`;
+            window.location.href = 'productos.html';
             return;
         }
 
@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             renderSeccionesAdicionales(productoSeleccionado);
             actualizarTotal();
         } else {
-            document.getElementById('seccion-detalle-producto').innerHTML = `<h3 class="text-center">Producto no encontrado.</h3>`;
+            window.location.href = 'productos.html';
+            return;
         }
     } catch (error) {
         console.error("Error al cargar el detalle del producto:", error);
