@@ -34,13 +34,17 @@
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
 
-                    <form class="d-flex ms-lg-3 mt-3 mt-lg-0 align-items-center" role="search">
+                    <form class="d-flex ms-lg-3 mt-3 mt-lg-0 align-items-center position-relative" role="search">
                         <section class="input-group">
-                            <input class="form-control" type="search"
+                            <input class="form-control" type="search" id="inputBusqueda"
                                 placeholder="Buscar juegos, consolas, accesorios..." aria-label="Buscar">
                             <button class="btn btn-outline-light" type="submit">
                                 <i class="bi bi-search fs-6 me-0"></i>
                             </button>
+                        </section>
+
+                        <section class="list-group position-absolute w-100 top-100 pt-1 border shadow-sm rounded-bottom"
+                            id="resultadosBusqueda" style="z-index: 1050; display: none;">
                         </section>
 
                         <a href="login.html" class="ms-3 d-none d-lg-block text-white">
@@ -315,7 +319,8 @@
                 <section class="col-md-3 mb-4 text-center">
                     <h6 class="fw-bold">Soporte</h6>
                     <ul class="list-unstyled">
-                        <li><a href="nosotros.html#faq" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+                        <li><a href="nosotros.html#faq" class="text-white text-decoration-none">Preguntas Frecuentes</a>
+                        </li>
                         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdfpIOJyGtQrcIrnz-O0sDKnInk3Z_A9x-f8ddTvis9PKCg4w/viewform?usp=send_form"
                                 class="text-white text-decoration-none">Libro de Reclamaciones</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
@@ -417,6 +422,7 @@
         </section>
     </section>
 
+    <script src="app/barra-busqueda.js"></script>
     <script src="app/index.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
