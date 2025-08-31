@@ -68,7 +68,16 @@ function actualizarBotonesPaginacion(totalProductos) {
 }
 
 function manejarFiltros() {
-    const busqueda = document.getElementById('searchInput').value.toLowerCase();
+    const urlParams = new URLSearchParams(window.location.search);
+    const busqueda = urlParams.get('q') ? decodeURIComponent(urlParams.get('q')).toLowerCase() : document.getElementById('searchInput').value.toLowerCase();
+    
+    if(urlParams.has('q')) {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.value = decodeURIComponent(urlParams.get('q'));
+        }
+    }
+    
     const precioFiltro = document.getElementById('filterPrice').value;
 
     let listaFiltrada = [...todosLosProductos];
@@ -76,7 +85,8 @@ function manejarFiltros() {
     if (busqueda !== "") {
         listaFiltrada = listaFiltrada.filter(p =>
             p.titulo.toLowerCase().includes(busqueda) ||
-            p.descripcion_larga.toLowerCase().includes(busqueda)
+            p.descripcion_larga.toLowerCase().includes(busqueda) ||
+            p.categorias.some(cat => cat.toLowerCase().includes(busqueda))
         );
     }
 
@@ -304,6 +314,7 @@ async function cargarProductos() {
         todosLosProductos = await response.json();
         productosFiltrados = [...todosLosProductos];
 
+        manejarFiltros();
         renderProductos(productosFiltrados, "seccion-productos");
 
         document.querySelectorAll('.category-btn').forEach(button => {
