@@ -20,14 +20,14 @@ function renderProductos(lista, contenedorId) {
     productosDeLaPagina.forEach(prod => {
         const card = `
             <article class="col">
-                <section class="card h-100 shadow-sm">
+                <section class="card h-100 shadow-sm" style="cursor: pointer;" onclick="verDetalle('${prod.titulo}')">
                     <img src="${prod.imagen}" class="card-img-top" alt="${prod.titulo}">
                     <section class="card-body">
                         <h6 class="card-title">${prod.titulo}</h6>
                     </section>
                     <section class="card-footer d-flex justify-content-between align-items-center">
                         <span class="fw-bold">S/ ${prod.precio.toFixed(2)}</span>
-                        <button class="btn btn-sm btn-primary">Comprar</button>
+                        <button class="btn btn-sm btn-primary" onclick="event.stopPropagation(); verDetalle('${prod.titulo}')">Comprar</button>
                     </section>
                 </section>
             </article>
@@ -43,7 +43,7 @@ function actualizarBotonesPaginacion(totalProductos) {
     const btnSiguiente = document.getElementById('btn-siguiente');
     const liAnterior = btnAnterior.parentElement;
     const liSiguiente = btnSiguiente.parentElement;
-    
+
     const totalPaginas = Math.ceil(totalProductos / productosPorPagina);
     const paginacionInfo = document.getElementById('paginacion-info');
 
@@ -79,7 +79,7 @@ function manejarFiltros() {
             p.descripcion_larga.toLowerCase().includes(busqueda)
         );
     }
-    
+
     let categoriaActiva = '';
     const contenedoresFiltro = document.querySelectorAll('[id$="-filters"]');
     for (const contenedor of contenedoresFiltro) {
@@ -92,7 +92,7 @@ function manejarFiltros() {
     if (categoriaActiva === 'playstation') {
         const psFiltro = document.getElementById('filterPlayStation').value;
         const juegosFiltro = document.getElementById('filterJuegos').value;
-        
+
         if (psFiltro !== "" || juegosFiltro !== "") {
             listaFiltrada = listaFiltrada.filter(p => {
                 let coincideJuegos = true;
@@ -288,7 +288,7 @@ function manejarFiltros() {
 function limpiarFiltros() {
     document.getElementById('searchInput').value = '';
     document.getElementById('filterPrice').value = '';
-    
+
     const contenedoresFiltro = document.querySelectorAll('[id$="-filters"]');
     contenedoresFiltro.forEach(contenedor => {
         contenedor.classList.add('d-none');
@@ -314,7 +314,7 @@ async function cargarProductos() {
                         select.value = '';
                     }
                 });
-                
+
                 document.querySelectorAll('[id$="-filters"]').forEach(el => el.classList.add('d-none'));
 
                 const category = event.target.dataset.category;
@@ -330,7 +330,7 @@ async function cargarProductos() {
         document.getElementById('searchInput').addEventListener('input', manejarFiltros);
         document.getElementById('filterPrice').addEventListener('change', manejarFiltros);
         document.getElementById('btnLimpiar').addEventListener('click', limpiarFiltros);
-        
+
         document.getElementById('filterJuegos').addEventListener('change', manejarFiltros);
         document.getElementById('filterPlayStation').addEventListener('change', manejarFiltros);
         document.getElementById('filterXbox').addEventListener('change', manejarFiltros);
@@ -359,3 +359,8 @@ async function cargarProductos() {
 }
 
 document.addEventListener("DOMContentLoaded", cargarProductos);
+
+window.verDetalle = function(tituloProducto) {
+    const tituloCodificado = encodeURIComponent(tituloProducto);
+    window.location.href = `detalle-producto.html?titulo=${tituloCodificado}`;
+};
