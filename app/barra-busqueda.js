@@ -68,10 +68,10 @@ function renderResultadosBusqueda(lista, query) {
         item.className = "list-group-item list-group-item-action d-flex align-items-center";
         item.innerHTML = `
             <img src="${prod.imagen}" alt="${prod.titulo}" style="height: 40px; width: 40px; object-fit: cover;" class="me-3 rounded">
-            <div>
+            <section>
                 <h6 class="mb-0 text-dark">${prod.titulo}</h6>
                 <small class="text-success">S/ ${prod.precio.toFixed(2)}</small>
-            </div>
+            </section>
         `;
         contenedor.appendChild(item);
     });

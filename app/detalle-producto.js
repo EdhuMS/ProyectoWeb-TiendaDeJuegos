@@ -50,33 +50,33 @@ function renderDetalleProducto(prod) {
             </section>
 
             <section class="col-lg-4 col-xl-3 mb-3">
-                <div class="card p-4 shadow-sm border-0 bg-dark text-light">
+                <section class="card p-4 shadow-sm border-0 bg-dark text-light">
                     <h5 class="fw-bold card-title mb-4 text-center">MEDIOS DE PAGO</h5>
                     <section class="bg-light mb-4 align-items-center justify-content-center d-flex p-1 rounded">
                         <img src="img/pagos-logo.png" alt="Medios de Pago" class="img-fluid">
                     </section>
                     <section class="mb-3 d-flex align-items-center justify-content-between">
                         <label for="cantidad" class="form-label mb-0 fw-bold">Cantidad:</label>
-                        <div class="input-group" style="width: 120px;">
+                        <section class="input-group" style="width: 120px;">
                             <button class="btn btn-outline-light" type="button" onclick="cambiarCantidad(-1)">-</button>
                             <input type="text" id="cantidad" class="form-control text-center" value="1" readonly>
                             <button class="btn btn-outline-light" type="button" onclick="cambiarCantidad(1)">+</button>
-                        </div>
+                        </section>
                     </section>
                     <hr>
                     <section class="mb-4 d-flex align-items-center justify-content-between">
                         <h5 class="fw-bold mb-0">Subtotal:</h5>
                         <h5 class="fw-bold text-success mb-0 text-warning" id="subtotal"></h5>
                     </section>
-                    <div class="d-grid gap-2">
+                    <section class="d-grid gap-2">
                         <button class="btn btn-primary btn-lg" onclick="alert('Añadir al carrito: Funcionalidad en desarrollo.')">
                             <i class="bi bi-cart-plus me-2"></i>Añadir al Carrito
                         </button>
                         <button class="btn btn-success btn-lg" onclick="alert('Comprar ahora: Funcionalidad en desarrollo.')">
                             <i class="bi bi-bag-check me-2"></i>Comprar
                         </button>
-                    </div>
-                </div>
+                    </section>
+                </section>
             </section>
         </section>
     `;
@@ -94,9 +94,9 @@ function renderSeccionesAdicionales(prod) {
     if (prod.video && prod.video !== '(Sin video)') {
         contenedorVideo.innerHTML = `
             <h3 class="fw-bold">Video</h3>
-            <div class="ratio ratio-16x9">
+            <section class="ratio ratio-16x9">
                 <iframe src="${prod.video}" allowfullscreen></iframe>
-            </div>
+            </section>
         `;
     } else {
         contenedorVideo.style.display = 'none';
