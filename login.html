@@ -31,14 +31,14 @@
                 <section class="mb-3">
                     <section class="input-group">
                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                        <input type="email" class="form-control" placeholder="Username or Email">
+                        <input type="email" class="form-control" placeholder="Email" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" aria-label="Email" autocomplete="username">
                     </section>
                 </section>
 
                 <section class="mb-3">
                     <section class="input-group">
                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                        <input type="password" class="form-control" placeholder="Enter your Password">
+                        <input type="password" class="form-control" placeholder="Contraseña" required minlength="6" maxlength="32" pattern=".{6,32}" aria-label="Contraseña" autocomplete="current-password">
                         <span class="input-group-text"><i class="bi bi-eye-slash"></i></span>
                     </section>
                 </section>
