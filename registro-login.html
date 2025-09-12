@@ -15,15 +15,15 @@
 
     <header class="position-absolute top-0 start-0 m-4">
         <nav>
-            <a href="index.html" class="btn btn-light border">
+            <button class="btn btn-light border" onclick="goBack()">
                 <i class="bi bi-arrow-left"></i>
-            </a>
+            </button>
         </nav>
     </header>
 
     <main class="container d-flex justify-content-center align-items-center min-vh-100">
 
-        <div class="card shadow-lg p-4 text-center" style="max-width: 500px; width: 100%; border-radius: 1rem;">
+        <section class="card shadow-lg p-4 text-center" style="max-width: 500px; width: 100%; border-radius: 1rem;">
 
             <!-- Logo -->
             <section class="mb-4">
@@ -41,138 +41,140 @@
                 </button>
             </section>
 
-        </div>
+        </section>
 
     </main>
 
 
     <!-- Modal Registro -->
-    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content rounded-4 shadow">
-                <div class="modal-header">
+    <section class="modal fade" id="modalRegistro" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-lg modal-dialog-centered">
+            <section class="modal-content rounded-4 shadow">
+                <section class="modal-header">
                     <h5 class="modal-title">Crea tu cuenta</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
+                </section>
+                <section class="modal-body">
                     <form>
                         <!-- Nombre -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-person"></i></span>
                                 <input type="text" id="firstName" class="form-control" placeholder="Nombres" required>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                         <!-- Apellidos -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-person"></i></span>
                                 <input type="text" id="lastName" class="form-control" placeholder="Apellidos" required>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                         <!-- Fecha -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-calendar"></i></span>
                                 <input type="date" id="dob" class="form-control" required>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                         <!-- Dirección -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
                                 <input type="text" id="address" class="form-control" placeholder="Dirección" required>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                         <!-- Email -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                                 <input type="email" id="email" class="form-control" placeholder="Correo electrónico"
                                     required>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                         <!-- Teléfono -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text">+51</span>
                                 <input type="tel" id="phone" class="form-control" placeholder="Número de celular"
                                     required pattern="[0-9]{9}">
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                         <!-- Password -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                <input type="password" id="password" class="form-control" placeholder="Contraseña"
+                                <input type="password" class="form-control password-input" placeholder="Contraseña"
                                     required minlength="8">
-                            </div>
-                        </div>
+                                <span class="input-group-text toggle-password"><i class="bi bi-eye-slash"></i></span>
+                            </section>
+                        </section>
                         <!-- Confirm -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                <input type="password" id="confirmPassword" class="form-control"
+                                <input type="password" class="form-control password-input"
                                     placeholder="Repetir contraseña" required>
-                            </div>
-                        </div>
+                                <span class="input-group-text toggle-password"><i class="bi bi-eye-slash"></i></span>
+                            </section>
+                        </section>
 
                         <button type="submit" class="btn btn-primary w-100">Registrarme</button>
                     </form>
 
                     <!-- Link para cambiar a login -->
-                    <div class="text-center mt-3">
+                    <section class="text-center mt-3">
                         <p>¿Ya tienes una cuenta?
                             <a href="#" id="linkToLogin">Inicia sesión</a>
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
 
     <!-- Modal Login -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered custom-modal-login">
-            <div class="modal-content rounded-4 shadow">
-                <div class="modal-header">
+    <section class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-centered custom-modal-login">
+            <section class="modal-content rounded-4 shadow">
+                <section class="modal-header">
                     <h5 class="modal-title">Iniciar Sesión</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
+                </section>
 
-                <div class="modal-body">
+                <section class="modal-body">
 
                     <form>
                         <!-- Email -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-person"></i></span>
                                 <input type="email" class="form-control" placeholder="Email" required
                                     pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" aria-label="Email" autocomplete="username">
-                            </div>
-                        </div>
+                            </section>
+                        </section>
 
                         <!-- Contraseña -->
-                        <div class="mb-3">
-                            <div class="input-group">
+                        <section class="mb-3">
+                            <section class="input-group">
                                 <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                <input type="password" class="form-control" placeholder="Contraseña" required
+                                <input type="password" class="form-control password-input" placeholder="Contraseña" required
                                     minlength="6" maxlength="32" pattern=".{6,32}" aria-label="Contraseña"
                                     autocomplete="current-password">
-                                <span class="input-group-text"><i class="bi bi-eye-slash"></i></span>
-                            </div>
-                        </div>
+                                <span class="input-group-text toggle-password"><i class="bi bi-eye-slash"></i></span>
+                            </section>
+                        </section>
 
                         <!-- Recordarme -->
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <div class="form-check">
+                        <section class="d-flex justify-content-between align-items-center mb-4">
+                            <section class="form-check">
                                 <input class="form-check-input" type="checkbox" id="rememberMe">
                                 <label class="form-check-label" for="rememberMe">
                                     Recordarme
                                 </label>
-                            </div>
+                            </section>
                             <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
-                        </div>
+                        </section>
 
                         <!-- Botón -->
                         <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
@@ -181,10 +183,10 @@
                     <footer class="text-center mt-3">
                         <p>¿No estás registrado? <a href="#" id="linkToRegister">Crea tu cuenta</a></p>
                     </footer>
-                </div>
-            </div>
-        </div>
-    </div>
+                </section>
+            </section>
+        </section>
+    </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="app/modals-registro.js"></script>
