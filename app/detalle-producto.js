@@ -58,9 +58,9 @@ function renderDetalleProducto(prod) {
                     <section class="mb-3 d-flex align-items-center justify-content-between">
                         <label for="cantidad" class="form-label mb-0 fw-bold">Cantidad:</label>
                         <section class="input-group" style="width: 120px;">
-                            <button class="btn btn-outline-light" type="button" onclick="cambiarCantidad(-1)">-</button>
+                            <button class="btn btn-warning" type="button" onclick="cambiarCantidad(-1)">-</button>
                             <input type="text" id="cantidad" class="form-control text-center" value="1" readonly>
-                            <button class="btn btn-outline-light" type="button" onclick="cambiarCantidad(1)">+</button>
+                            <button class="btn btn-warning" type="button" onclick="cambiarCantidad(1)">+</button>
                         </section>
                     </section>
                     <hr>
@@ -69,7 +69,7 @@ function renderDetalleProducto(prod) {
                         <h5 class="fw-bold text-success mb-0 text-warning" id="subtotal"></h5>
                     </section>
                     <section class="d-grid gap-2">
-                        <button class="btn btn-primary btn-lg" onclick="alert('Añadir al carrito: Funcionalidad en desarrollo.')">
+                        <button class="btn btn-primary btn-lg" onclick="handleAddToCart()">
                             <i class="bi bi-cart-plus me-2"></i>Añadir al Carrito
                         </button>
                         <button class="btn btn-success btn-lg" onclick="alert('Comprar ahora: Funcionalidad en desarrollo.')">
@@ -127,7 +127,9 @@ function renderProductosRelacionados(productoActual) {
                         </section>
                         <section class="card-footer d-flex justify-content-between align-items-center">
                             <span class="fw-bold">S/ ${prod.precio.toFixed(2)}</span>
-                            <button class="btn btn-sm btn-primary" onclick="event.stopPropagation(); verDetalle('${prod.titulo}')">Comprar</button>
+                            <button class="btn btn-primary rounded-circle" style="width: 36px; height: 36px; display: flex; justify-content: center; align-items: center;" onclick="event.stopPropagation(); handleAddToCartFromRelated('${prod.titulo}', this)">
+                                <i class="bi bi-plus-lg fs-5"></i>
+                            </button>
                         </section>
                     </section>
                 </article>
@@ -138,6 +140,32 @@ function renderProductosRelacionados(productoActual) {
         document.getElementById('seccion-relacionados').style.display = 'none';
     }
 }
+
+window.handleAddToCartFromRelated = function(tituloProducto, buttonElement) {
+    const producto = todosLosProductos.find(prod => prod.titulo === tituloProducto);
+    if (producto) {
+        const productoParaCarrito = {
+            titulo: producto.titulo,
+            precio: producto.precio,
+            imagen: producto.imagen,
+            cantidad: 1
+        };
+        if (typeof addToCart === 'function') {
+            addToCart(productoParaCarrito);
+        }
+
+        const originalContent = buttonElement.innerHTML;
+        buttonElement.innerHTML = '<i class="bi bi-check-lg fs-5"></i>';
+        buttonElement.classList.remove('btn-primary');
+        buttonElement.classList.add('btn-success');
+        
+        setTimeout(() => {
+            buttonElement.innerHTML = originalContent;
+            buttonElement.classList.remove('btn-success');
+            buttonElement.classList.add('btn-primary');
+        }, 1000);
+    }
+};
 
 window.verDetalle = function(tituloProducto) {
     const tituloCodificado = encodeURIComponent(tituloProducto);
@@ -165,5 +193,33 @@ window.actualizarTotal = function() {
         const precio = productoSeleccionado.precio;
         const total = (cantidad * precio).toFixed(2);
         subtotalSpan.textContent = `S/ ${total}`;
+    }
+};
+
+window.handleAddToCart = function() {
+    const cantidadInput = document.getElementById('cantidad');
+    const cantidad = parseInt(cantidadInput.value, 10);
+    const buttonElement = document.querySelector('#seccion-detalle-producto .btn-primary');
+
+    if (productoSeleccionado && cantidad > 0) {
+        const productoParaCarrito = {
+            titulo: productoSeleccionado.titulo,
+            precio: productoSeleccionado.precio,
+            imagen: productoSeleccionado.imagen,
+            cantidad: cantidad
+        };
+        addToCart(productoParaCarrito);
+
+        const originalContent = buttonElement.innerHTML;
+        const originalClasses = buttonElement.className;
+
+        buttonElement.innerHTML = '<i class="bi bi-check-lg me-2"></i>Agregado';
+        buttonElement.classList.remove('btn-primary');
+        buttonElement.classList.add('btn-success');
+        
+        setTimeout(() => {
+            buttonElement.innerHTML = originalContent;
+            buttonElement.className = originalClasses;
+        }, 800);
     }
 };

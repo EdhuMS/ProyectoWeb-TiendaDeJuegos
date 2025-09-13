@@ -52,7 +52,8 @@
                         <a href="registro-login.html" class="ms-3 d-none d-lg-block text-white">
                             <i class="bi bi-person-fill fs-4"></i>
                         </a>
-                        <a href="#" class="ms-3 d-none d-lg-block text-white">
+                        <a href="#" class="ms-3 d-none d-lg-block text-white" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasCarrito">
                             <i class="bi bi-cart2 fs-4"></i>
                         </a>
                     </form>
@@ -65,7 +66,8 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="bi bi-cart2 fs-4 me-2"></i>Mi Bolsa
+                                <i class="bi bi-cart2 fs-4 me-2" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasCarrito"></i>Mi Bolsa
                             </a>
                         </li>
                     </ul>
@@ -120,23 +122,24 @@
                                 <section class="row g-3">
                                     <section class="col-md-6">
                                         <label for="nombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre"
+                                            required>
                                     </section>
                                     <section class="col-md-6">
                                         <label for="correo" class="form-label">Correo electrónico</label>
                                         <input type="email" class="form-control" id="correo"
-                                            placeholder="tuemail@ejemplo.com">
+                                            placeholder="tuemail@ejemplo.com" required>
                                     </section>
                                 </section>
                                 <section class="mb-3 mt-3">
                                     <label for="asunto" class="form-label">Asunto</label>
                                     <input type="text" class="form-control" id="asunto"
-                                        placeholder="Motivo de tu mensaje">
+                                        placeholder="Motivo de tu mensaje" required>
                                 </section>
                                 <section class="mb-3">
                                     <label for="mensaje" class="form-label">Mensaje</label>
                                     <textarea class="form-control" id="mensaje" rows="5"
-                                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                                        placeholder="Escribe tu mensaje aquí..." required></textarea>
                                 </section>
                                 <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
                             </form>
@@ -147,6 +150,42 @@
             </section>
         </section>
     </main>
+
+    <!--Boton flotante - carrito-->
+    <button id="boton-carrito" class="btn btn-lg shadow-lg rounded-circle d-none text-white text-center"
+        style="background-color: #ff4500; position: fixed; bottom: 20px; right: 20px; z-index: 1000;"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito">
+        <i class="bi bi-cart2 fs-4"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-white"
+            id="contador-carrito" style="background-color: #636363;">
+            0
+        </span>
+    </button>
+
+    <!--Carrito-->
+    <aside class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasCarrito"
+        aria-labelledby="offcanvasCarritoLabel">
+        <header class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold h4" id="offcanvasCarritoLabel">Mi Carrito</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Cerrar"></button>
+        </header>
+        <section class="offcanvas-body d-flex flex-column">
+            <section id="contenedor-items-carrito" class="flex-grow-1 overflow-auto"></section>
+
+            <footer class="mt-auto pt-3 border-top border-secondary">
+                <section class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0">Subtotal:</h5>
+                    <h5 class="fw-bold mb-0 text-warning" id="total-carrito">S/ 0.00</h5>
+                </section>
+                <section class="d-grid gap-2">
+                    <button class="btn btn-success btn-lg">
+                        <i class="bi bi-bag-check me-2"></i>Ir a Pagar
+                    </button>
+                </section>
+            </footer>
+        </section>
+    </aside>
 
     <!-- Footer-->
     <footer class="bg-dark text-white pt-4">
@@ -171,13 +210,15 @@
                 <section class="col-md-3 mb-4 text-center">
                     <h6 class="fw-bold">Soporte</h6>
                     <ul class="list-unstyled">
-                        <li><a href="nosotros.html#faq" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdfpIOJyGtQrcIrnz-O0sDKnInk3Z_A9x-f8ddTvis9PKCg4w/viewform?usp=send_form" class="text-white text-decoration-none">Libro de Reclamaciones</a></li>
+                        <li><a href="nosotros.html#faq" class="text-white text-decoration-none">Preguntas Frecuentes</a>
+                        </li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdfpIOJyGtQrcIrnz-O0sDKnInk3Z_A9x-f8ddTvis9PKCg4w/viewform?usp=send_form"
+                                class="text-white text-decoration-none">Libro de Reclamaciones</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
                     </ul>
                 </section>
-                
+
                 <section class="col-md-3 mb-4 text-center">
                     <h6 class="fw-bold">Síguenos</h6>
                     <a href="https://www.facebook.com/GamesCenter.pe" class="text-white me-3"><i
@@ -197,6 +238,7 @@
         </section>
     </footer>
 
+    <script src="app/carrito.js"></script>
     <script src="app/barra-busqueda.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

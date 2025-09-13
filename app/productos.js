@@ -27,7 +27,9 @@ function renderProductos(lista, contenedorId) {
                     </section>
                     <section class="card-footer d-flex justify-content-between align-items-center">
                         <span class="fw-bold">S/ ${prod.precio.toFixed(2)}</span>
-                        <button class="btn btn-sm btn-primary" onclick="event.stopPropagation(); verDetalle('${prod.titulo}')">Comprar</button>
+                        <button class="btn btn-primary rounded-circle" style="width: 36px; height: 36px; display: flex; justify-content: center; align-items: center;" onclick="event.stopPropagation(); handleAddToCartFromProduct('${prod.titulo}', this)">
+                            <i class="bi bi-plus-lg fs-5"></i>
+                        </button>
                     </section>
                 </section>
             </article>
@@ -371,7 +373,32 @@ async function cargarProductos() {
 
 document.addEventListener("DOMContentLoaded", cargarProductos);
 
-window.verDetalle = function(tituloProducto) {
+window.verDetalle = function (tituloProducto) {
     const tituloCodificado = encodeURIComponent(tituloProducto);
     window.location.href = `detalle-producto.html?titulo=${tituloCodificado}`;
+};
+
+window.handleAddToCartFromProduct = function(tituloProducto, buttonElement) {
+    const producto = todosLosProductos.find(prod => prod.titulo === tituloProducto);
+    if (producto) {
+        const productoParaCarrito = {
+            titulo: producto.titulo,
+            precio: producto.precio,
+            imagen: producto.imagen,
+            cantidad: 1
+        };
+        addToCart(productoParaCarrito);
+
+        const originalContent = buttonElement.innerHTML;
+        buttonElement.innerHTML = '<i class="bi bi-check-lg fs-5"></i>';
+        buttonElement.classList.remove('btn-primary');
+        buttonElement.classList.add('btn-success');
+        
+        setTimeout(() => {
+            buttonElement.innerHTML = originalContent;
+            buttonElement.classList.remove('btn-success');
+            buttonElement.classList.add('btn-primary');
+        }, 1000);
+
+    }
 };
