@@ -20,6 +20,14 @@ function addToCart(productToAdd) {
     }
 
     saveCart();
+
+    const botonCarrito = document.getElementById('boton-carrito');
+    if (botonCarrito) {
+        botonCarrito.classList.add('pulse-animation');
+        setTimeout(() => {
+            botonCarrito.classList.remove('pulse-animation');
+        }, 500);
+    }
 }
 
 function removeFromCart(productTitle) {
