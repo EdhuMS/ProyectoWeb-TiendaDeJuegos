@@ -34,7 +34,10 @@ No se ha verificado una infraestructura de comercio electrónico lista para oper
 
 ## Licencia y atribuciones
 
-**Licencia del código pendiente de definir.** La visibilidad pública en GitHub no concede por sí sola permiso general de copia, modificación o redistribución. Antes de elegir una licencia libre se deben revisar la autoría del código y los derechos de logotipos, carátulas, imágenes, videojuegos, marcas y demás materiales de terceros. Una licencia para el código propio no debería interpretarse como licencia sobre esos activos.
+El **código original** de este proyecto se distribuye bajo la **[licencia MIT](LICENSE)**. Se permite su reutilización, modificación y redistribución bajo las condiciones de la licencia, incluso para fines comerciales.
+
+**Atención:** la concesión de MIT sobre el código no autoriza automáticamente el uso de logotipos, carátulas, imágenes, nombres comerciales, marcas de videojuegos ni recursos de terceros que aparezcan en la demostración. Para reutilizarlos deben comprobarse los permisos de cada titular. Consulta también las licencias de Bootstrap y otras bibliotecas que utilice el sitio.
+
 
 ## Mejoras futuras
 
